@@ -166,9 +166,9 @@ Menu:
 			"Add Selection Below":
 				value: "向下選取 ↓"
 			"Single Selection":
-				value: "解除同時操作"
+				value: "解除同時操作模式"
 			"Split into Lines":
-				value: "選択範囲を各行に分割して同時操作"
+				value: "進入多行同時操作模式"
 			"Select to Top":
 				value: "選取至文件頂端"
 			"Select to Bottom":
@@ -262,7 +262,7 @@ Menu:
 					"Run Package Specs":
 						value: "執行擴充套件規格測試"
 					"Toggle Developer Tools":
-						value: "打開/關閉開發人員工具"
+						value: "開發人員工具"
 			"Increase Font Size":
 				value: "放大文字尺寸"
 			"Decrease Font Size":
@@ -270,11 +270,11 @@ Menu:
 			"Reset Font Size":
 				value: "重設文字尺寸"
 			"Toggle Soft Wrap":
-				value: "打開/關閉自動換行"
+				value: "自動換行"
 			"Toggle Command Palette":
-				value: "打開/關閉指令面板"
+				value: "指令面板"
 			"Toggle Tree View":
-				value: "打開/關閉檔案清單面板"
+				value: "檔案清單面板"
 	Packages:
 		value: "擴充套件"
 	Window:
@@ -283,7 +283,7 @@ Menu:
 			Minimize:
 				value: "最小化"
 			Zoom:
-				value: "放大／縮小"
+				value: "縮放"
 			"Bring All to Front":
 				value: "全部移至最上層"
 	Help:

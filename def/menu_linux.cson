@@ -187,7 +187,7 @@ Menu:
 					"Run Package &Specs":
 						value: "執行擴充套件規格測試(&S)"
 					"Toggle Developer &Tools":
-						value: "打開/關閉開發人員工具(&T)"
+						value: "開發人員工具(&T)"
 			"&Increase Font Size":
 				value: "放大文字尺寸"
 			"&Decrease Font Size":
@@ -195,11 +195,11 @@ Menu:
 			"Re&set Font Size":
 				value: "重設文字尺寸"
 			"Toggle Soft &Wrap":
-				value: "打開/關閉自動換行(&W)"
+				value: "自動換行(&W)"
 			"Toggle Command Palette":
-				value: "打開/關閉指令面板"
+				value: "指令面板"
 			"Toggle Tree View":
-				value: "打開/關閉檔案清單面板"
+				value: "檔案清單面板"
 	"&Selection":
 		value: "選取區域(&S)"
 		submenu:
@@ -208,9 +208,9 @@ Menu:
 			"Add Selection &Below":
 				value: "向下選取 ↓(&B)"
 			"S&plit into Lines":
-				value: "選択範囲を各行に分割して同時操作(&P)"
+				value: "進入多行同時操作模式(&P)"
 			"Single Selection":
-				value: "解除同時操作"
+				value: "解除同時操作模式"
 			"Select to &Top":
 				value: "選取至文件頂端(&T)"
 			"Select to Botto&m":
@@ -243,7 +243,7 @@ Menu:
 			"Select All":
 				value: "選擇全部項目"
 			"Toggle Find in Buffer":
-				value: "打開/關閉尋找面板"
+				value: "尋找面板"
 			"Find in Project":
 				value: "在專案資料夾中尋找..."
 			"Toggle Find in Project":
