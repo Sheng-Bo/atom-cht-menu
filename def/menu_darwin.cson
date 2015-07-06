@@ -224,32 +224,32 @@ Menu:
 		value: "表示"
 		submenu:
 			Reload:
-				value: "再読み込み"
+				value: "重新載入文件"
 			"Toggle Full Screen":
-				value: "フルスクリーン切替"
+				value: "切換全螢幕"
 			Panes:
-				value: "ペイン"
+				value: "窗格"
 				submenu:
 					"Split Up":
-						value: "ペイン分割 ↑"
+						value: "向上分割 ↑"
 					"Split Down":
-						value: "ペイン分割 ↓"
+						value: "向下分割 ↓"
 					"Split Left":
-						value: "ペイン分割 ←"
+						value: "向左分割 ←"
 					"Split Right":
-						value: "ペイン分割 →"
+						value: "向右分割 →"
 					"Focus Next Pane":
-						value: "次のペインにフォーカス"
+						value: "移至後一個窗格"
 					"Focus Previous Pane":
-						value: "前のペインにフォーカス"
+						value: "移至前一個窗格"
 					"Focus Pane Above":
-						value: "ペインにフォーカス ↑"
+						value: "移至上方窗格 ↑"
 					"Focus Pane Below":
-						value: "ペインにフォーカス ↓"
+						value: "移至下方窗格 ↓"
 					"Focus Pane On Left":
-						value: "ペインにフォーカス ←"
+						value: "移至左方窗格 ←"
 					"Focus Pane On Right":
-						value: "ペインにフォーカス →"
+						value: "移至右方窗格 →"
 					"Close Pane":
 						value: "關閉窗格"
 			Developer:
