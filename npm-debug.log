@@ -8,22 +8,32 @@
 2 info using npm@2.5.1
 3 info using node@v0.10.35
 4 info git [ 'status', '--porcelain' ]
-5 verbose stack Error: Git working directory not clean.
-5 verbose stack M package.json
-5 verbose stack     at /Applications/Atom.app/Contents/Resources/app/apm/node_modules/npm/lib/version.js:138:37
-5 verbose stack     at ChildProcess.exithandler (child_process.js:656:7)
-5 verbose stack     at ChildProcess.emit (events.js:98:17)
-5 verbose stack     at maybeClose (child_process.js:766:16)
-5 verbose stack     at Socket.<anonymous> (child_process.js:979:11)
-5 verbose stack     at Socket.emit (events.js:95:17)
-5 verbose stack     at Pipe.close (net.js:466:12)
-6 verbose cwd /Users/artalose/Google Drive/MacroViz_Research/atom-cht-menu
-7 error Darwin 14.4.0
-8 error argv "/Applications/Atom.app/Contents/Resources/app/apm/bin/node" "/Applications/Atom.app/Contents/Resources/app/apm/node_modules/npm/bin/npm-cli.js" "version" "patch" "-m" "Prepare %s release"
-9 error node v0.10.35
-10 error npm  v2.5.1
-11 error Git working directory not clean.
-11 error M package.json
-12 error If you need help, you may report this error at:
-12 error     <http://github.com/npm/npm/issues>
-13 verbose exit [ 1, true ]
+5 verbose version.write data { name: 'cht-menu',
+5 verbose version.write   main: './lib/main',
+5 verbose version.write   version: '0.0.2',
+5 verbose version.write   description: '功能選單與右鍵選單之中文化',
+5 verbose version.write   repository: 'https://github.com/Sheng-Bo/atom-cht-menu',
+5 verbose version.write   license: 'MIT',
+5 verbose version.write   engines: { atom: '>=0.174.0 <2.0.0' },
+5 verbose version.write   dependencies: { cson: '3.0.1' } } to package.json
+6 info git [ 'add', 'package.json' ]
+7 info git [ 'commit', '-m', 'Prepare 0.0.2 release' ]
+8 info git [ 'tag', 'v0.0.2', '-am', 'Prepare 0.0.2 release' ]
+9 verbose stack Error: Command failed: fatal: tag 'v0.0.2' already exists
+9 verbose stack
+9 verbose stack     at ChildProcess.exithandler (child_process.js:658:15)
+9 verbose stack     at ChildProcess.emit (events.js:98:17)
+9 verbose stack     at maybeClose (child_process.js:766:16)
+9 verbose stack     at Socket.<anonymous> (child_process.js:979:11)
+9 verbose stack     at Socket.emit (events.js:95:17)
+9 verbose stack     at Pipe.close (net.js:466:12)
+10 verbose cwd /Users/artalose/Google Drive/MacroViz_Research/atom-cht-menu
+11 error Darwin 14.4.0
+12 error argv "/Applications/Atom.app/Contents/Resources/app/apm/bin/node" "/Applications/Atom.app/Contents/Resources/app/apm/node_modules/npm/bin/npm-cli.js" "version" "patch" "-m" "Prepare %s release"
+13 error node v0.10.35
+14 error npm  v2.5.1
+15 error code 128
+16 error Command failed: fatal: tag 'v0.0.2' already exists
+17 error If you need help, you may report this error at:
+17 error     <http://github.com/npm/npm/issues>
+18 verbose exit [ 1, true ]
