@@ -5,7 +5,7 @@ Menu:
 			"About Atom":
 				value: "關於 Atom"
 			"View License":
-				value: "檢視授權條款"
+				value: "檢視授權"
 			"Preferences...":
 				value: "偏好設定..."
 			"Open Your Config":
@@ -278,32 +278,32 @@ Menu:
 	Packages:
 		value: "擴充套件"
 	Window:
-		value: "ウインドウ"
+		value: "視窗"
 		submenu:
 			Minimize:
 				value: "最小化"
 			Zoom:
-				value: "拡大／縮小"
+				value: "放大／縮小"
 			"Bring All to Front":
-				value: "すべてを手前に移動"
+				value: "全部移至最上層"
 	Help:
-		value: "ヘルプ"
+		value: "說明"
 		submenu:
 			"Terms of Use":
-			  value: "利用条件"
+			  value: "使用條款"
 			Documentation:
-				value: "ドキュメント"
+				value: "說明文件"
 			Roadmap:
-				value: "ロードマップ"
+				value: "發展藍圖"
 			"Frequently Asked Questions":
-				value: "よくあるご質問"
+				value: "常見問題"
 			"Community Discussions":
-				value: "コミュニティ ディスカッション"
+				value: "社群討論區"
 			"Report Issue":
-				value: "問題の報告"
+				value: "回報問題"
 			"Search Issues":
-				value: "報告されている問題"
+				value: "已知問題"
 			"Release Notes":
-				value: "リリースノート"
+				value: "版本資訊"
 			"Welcome Guide":
-				value: "ウェルカムガイド"
+				value: "歡迎畫面與指南"

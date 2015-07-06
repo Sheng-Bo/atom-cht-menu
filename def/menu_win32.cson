@@ -265,25 +265,25 @@ Menu:
 	"&Packages":
 		value: "擴充套件(&P)"
 	"&Help":
-		value: "ヘルプ(&H)"
+		value: "說明(&H)"
 		submenu:
 			"View &Terms of Use":
-			  value: "利用条件"
+			  value: "檢視使用條款"
 			"View &License":
-			  value: "ライセンス"
+			  value: "檢視授權"
 			"&Documentation":
-				value: "ドキュメント(&D)"
+				value: "說明文件(&D)"
 			Roadmap:
-				value: "ロードマップ"
+				value: "發展藍圖"
 			"Frequently Asked Questions":
-				value: "よくあるご質問"
+				value: "常見問題"
 			"Community Discussions":
-				value: "コミュニティ ディスカッション"
+				value: "社群討論區"
 			"Report Issue":
-				value: "問題の報告"
+				value: "回報問題"
 			"Search Issues":
-				value: "報告されている問題"
+				value: "已知問題"
 			"Release Notes":
-				value: "リリースノート"
+				value: "版本資訊"
 			"Welcome Guide":
-				value: "ウェルカムガイド"
+				value: "歡迎畫面與指南"
