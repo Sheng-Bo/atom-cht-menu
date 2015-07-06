@@ -31,24 +31,24 @@ Menu:
 			"Check for Update":
 				value: "檢查更新"
 	File:
-		value: "檔案"
+		value: "文件"
 		submenu:
 			"New Window":
 				value: "開新視窗"
 			"New File":
-				value: "開新檔案"
+				value: "開新文件"
 			"Open...":
 				value: "打開..."
 			"Add Project Folder...":
 				value: "新增專案資料夾..."
 			"Reopen Last Item":
-				value: "重新打開上一次關閉的檔案..."
+				value: "重新打開上一次關閉的文件..."
 			Save:
 				value: "儲存"
 			"Save As...":
 				value: "另存新檔..."
 			"Save All":
-				value: "儲存全部檔案"
+				value: "全部儲存"
 			"Close Tab":
 				value: "關閉頁籤"
 			"Close Pane":
@@ -170,9 +170,9 @@ Menu:
 			"Split into Lines":
 				value: "選択範囲を各行に分割して同時操作"
 			"Select to Top":
-				value: "選取至檔案頂端"
+				value: "選取至文件頂端"
 			"Select to Bottom":
-				value: "選取至檔案底端"
+				value: "選取至文件底端"
 			"Select Line":
 				value: "選取行"
 			"Select Word":
@@ -190,36 +190,36 @@ Menu:
 			"Select Inside Brackets":
 				value: "選取括號內容"
 	Find:
-		value: "検索"
+		value: "尋找"
 		submenu:
 			"Find in Buffer":
-				value: "検索..."
+				value: "在編輯中文件中搜尋..."
 			"Replace in Buffer":
-				value: "置換..."
+				value: "在編輯中文件中取代..."
 			"Select Next":
-				value: "次の一致も選択"
+				value: "選擇下一個項目"
 			"Select All":
-				value: "一致をすべて選択"
+				value: "選擇全部項目"
 			"Toggle Find in Buffer":
-				value: "検索パネル切替"
+				value: "切換尋找面板"
 			"Find in Project":
-				value: "プロジェクト内で検索..."
+				value: "在專案資料夾中尋找..."
 			"Toggle Find in Project":
-				value: "プロジェクト内で検索パネル切替"
+				value: "打開/關閉在專案資料夾尋找面板"
 			"Find Next":
-				value: "次を検索"
+				value: "尋找下一個項目"
 			"Find Previous":
-				value: "前を検索"
+				value: "尋找上一個項目"
 			"Replace Next":
-				value: "次を置換"
+				value: "取代下一個項目"
 			"Replace All":
-				value: "すべて置換"
+				value: "全部取代"
 			"Find Buffer":
-				value: "バッファを検索"
+				value: "尋找編輯中文件"
 			"Find File":
-				value: "ファイルを検索"
+				value: "尋找檔案"
 			"Find Modified File":
-				value: "修正されたファイルを検索"
+				value: "尋找修改過的檔案"
 	View:
 		value: "表示"
 		submenu:
@@ -276,7 +276,7 @@ Menu:
 			"Toggle Tree View":
 				value: "ツリービュー"
 	Packages:
-		value: "パッケージ"
+		value: "擴充套件"
 	Window:
 		value: "ウインドウ"
 		submenu:
