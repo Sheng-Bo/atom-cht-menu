@@ -5,7 +5,7 @@ Menu:
 			"New &Window":
 				value: "開新視窗(&W)"
 			"&New File":
-				value: "開新文件(&N)"
+				value: "新增文件(&N)"
 			"&Open File...":
 				value: "打開(&O)..."
 			"Open Folder...":

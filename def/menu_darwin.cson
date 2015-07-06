@@ -36,7 +36,7 @@ Menu:
 			"New Window":
 				value: "開新視窗"
 			"New File":
-				value: "開新文件"
+				value: "新增文件"
 			"Open...":
 				value: "打開..."
 			"Add Project Folder...":
