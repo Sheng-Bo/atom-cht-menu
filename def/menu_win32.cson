@@ -1,6 +1,6 @@
 Menu:
 	"&File":
-		value: "文件(&F)"
+		value: "檔案(&F)"
 		submenu:
 			"New &Window":
 				value: "開新視窗(&W)"
@@ -17,7 +17,7 @@ Menu:
 			"Se&ttings":
 				value: "偏好設定(&T)..."
 			"Open Your Config":
-				value: "打開我的個人設定"
+				value: "打開我的設定"
 			"Open Your Init Script":
 				value: "打開我的初始化指令檔"
 			"Open Your Keymap":

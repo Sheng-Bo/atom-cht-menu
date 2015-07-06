@@ -9,7 +9,7 @@ Menu:
 			"Preferences...":
 				value: "偏好設定..."
 			"Open Your Config":
-				value: "打開我的個人設定"
+				value: "打開我的設定"
 			"Open Your Init Script":
 				value: "打開我的初始化指令檔"
 			"Open Your Keymap":
@@ -31,7 +31,7 @@ Menu:
 			"Check for Update":
 				value: "檢查更新"
 	File:
-		value: "文件"
+		value: "檔案"
 		submenu:
 			"New Window":
 				value: "開新視窗"
