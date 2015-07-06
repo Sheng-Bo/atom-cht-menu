@@ -101,7 +101,7 @@ Menu:
 					"Lower Case":
 						value: "轉為小寫"
 					"Delete to End of Word":
-						value: "刪除至本詞尾"
+						value: "刪除至詞尾"
 					"Delete to Previous Word Boundary":
 						value: "刪除前一詞"
 					"Delete to Next Word Boundary":
@@ -157,38 +157,38 @@ Menu:
 			"Go to Line":
 				value: "移動至指定行號"
 			"Select Grammar":
-				value: "選擇程式語言"
+				value: "切換程式語言"
 	Selection:
-		value: "選択"
+		value: "選取區域"
 		submenu:
 			"Add Selection Above":
-				value: "選択範囲を広げる ↑"
+				value: "向上選取 ↑"
 			"Add Selection Below":
-				value: "選択範囲を広げる ↓"
+				value: "向下選取 ↓"
 			"Single Selection":
-				value: "同時操作状態を解除"
+				value: "解除同時操作"
 			"Split into Lines":
 				value: "選択範囲を各行に分割して同時操作"
 			"Select to Top":
-				value: "ファイル先頭まで選択"
+				value: "選取至檔案頂端"
 			"Select to Bottom":
-				value: "ファイル末尾まで選択"
+				value: "選取至檔案底端"
 			"Select Line":
-				value: "行を選択"
+				value: "選取行"
 			"Select Word":
-				value: "単語を選択"
+				value: "選取詞"
 			"Select to Beginning of Word":
-				value: "単語の先頭まで選択"
+				value: "選取至詞首"
 			"Select to Beginning of Line":
-				value: "行頭まで選択"
+				value: "選取至行首"
 			"Select to First Character of Line":
-				value: "行の最初の文字まで選択"
+				value: "選取至行內的第一個字元"
 			"Select to End of Word":
-				value: "単語の末尾まで選択"
+				value: "選取至詞尾"
 			"Select to End of Line":
-				value: "行末まで選択"
+				value: "選取至行尾"
 			"Select Inside Brackets":
-				value: "カッコ内を選択"
+				value: "選取括號內容"
 	Find:
 		value: "検索"
 		submenu:

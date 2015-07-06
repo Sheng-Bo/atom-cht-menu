@@ -74,7 +74,7 @@ Menu:
 					"&Lower Case":
 						value: "轉為小寫(&L)"
 					"Delete to End of &Word":
-						value: "刪除至本詞尾(&W)"
+						value: "刪除至詞尾(&W)"
 					"Delete to Previous Word Boundary":
 						value: "刪除前一詞"
 					"Delete to Next Word Boundary":
@@ -142,7 +142,7 @@ Menu:
 			"Go to Line":
 				value: "移動至指定行號"
 			"Select Grammar":
-				value: "選擇程式語言"
+				value: "切換程式語言"
 	"&View":
 		value: "表示(&V)"
 		submenu:
@@ -201,36 +201,36 @@ Menu:
 			"Toggle Tree View":
 				value: "ツリービュー"
 	"&Selection":
-		value: "選択(&S)"
+		value: "選取區域(&S)"
 		submenu:
 			"Add Selection &Above":
-				value: "選択範囲を広げる ↑(&A)"
+				value: "向上選取 ↑(&A)"
 			"Add Selection &Below":
-				value: "選択範囲を広げる ↓(&B)"
+				value: "向下選取 ↓(&B)"
 			"S&plit into Lines":
 				value: "選択範囲を各行に分割して同時操作(&P)"
 			"Single Selection":
-				value: "同時操作状態を解除"
+				value: "解除同時操作"
 			"Select to &Top":
-				value: "ファイル先頭まで選択(&T)"
+				value: "選取至檔案頂端(&T)"
 			"Select to Botto&m":
-				value: "ファイル末尾まで選択(&M)"
+				value: "選取至檔案底端(&M)"
 			"Select &Line":
-				value: "行を選択(&L)"
+				value: "選取行(&L)"
 			"Select &Word":
-				value: "単語を選択(&W)"
+				value: "選取詞(&W)"
 			"Select to Beginning of W&ord":
-				value: "単語の先頭まで選択(&O)"
+				value: "選取至詞首(&O)"
 			"Select to Beginning of L&ine":
-				value: "行頭まで選択(&I)"
+				value: "選取至行首(&I)"
 			"Select to First &Character of Line":
-				value: "行の最初の文字まで選択(&C)"
+				value: "選取至行內的第一個字元(&C)"
 			"Select to End of Wor&d":
-				value: "単語の末尾まで選択(&D)"
+				value: "選取至詞尾(&D)"
 			"Select to End of Lin&e":
-				value: "行末まで選択(&E)"
+				value: "選取至行尾(&E)"
 			"Select Inside Brackets":
-				value: "カッコ内を選択"
+				value: "選取括號內容"
 	"F&ind":
 		value: "検索(&I)"
 		submenu:
