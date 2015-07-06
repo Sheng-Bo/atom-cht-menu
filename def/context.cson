@@ -2,7 +2,7 @@ Context:
   "atom-workspace":
     "application:inspect": "要素の検証"
   "atom-text-editor":
-    "color-picker:open": "カラーピッカー"
+    "color-picker:open": "色彩選取工具"
     "minimap:toggle": "ミニマップ切替"
   "atom-text-editor, .overlayer":
     "core:undo": "復原"
@@ -24,13 +24,13 @@ Context:
     "pane:split-right": "向右分割 →"
     "pane:close": "關閉窗格"
   "atom-text-editor:not([mini])":
-    "encoding-selector:show": "エンコーディング選択"
-    "spell-check:correct-misspelling": "スペル修正"
-    "symbols-view:go-to-declaration": "宣言に移動"
+    "encoding-selector:show": "切換編碼"
+    "spell-check:correct-misspelling": "拼字檢查"
+    "symbols-view:go-to-declaration": "移動至宣告"
   "atom-pane[data-active-item-path] .item-views":
-    "tree-view:reveal-active-file": "ツリービューに表示"
+    "tree-view:reveal-active-file": "顯示於樹狀清單"
   "atom-pane[data-active-item-path] .tab.active":
-    "tree-view:reveal-active-file": "ツリービューに表示"
+    "tree-view:reveal-active-file": "顯示於樹狀清單"
   ".overlayer":
     "autocomplete:toggle": "オートコンプリート"
     "grammar-selector:show": "文法を選択"

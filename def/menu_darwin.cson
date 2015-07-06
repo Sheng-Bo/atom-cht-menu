@@ -111,53 +111,53 @@ Menu:
 					Transpose:
 						value: "前後倒置"
 			Folding:
-				value: "折りたたみ"
+				value: "折疊程式碼"
 				submenu:
 					Fold:
-						value: "折りたたむ"
+						value: "折疊"
 					Unfold:
-						value: "折りたたみを戻す"
+						value: "展開"
 					"Unfold All":
-						value: "すべての折りたたみを戻す"
+						value: "展開全部"
 					"Fold All":
-						value: "すべて折りたたむ"
+						value: "折疊全部"
 					"Fold Level 1":
-						value: "1段階折りたたむ"
+						value: "折疊第 1 層"
 					"Fold Level 2":
-						value: "2段階折りたたむ"
+						value: "折疊第 2 層"
 					"Fold Level 3":
-						value: "3段階折りたたむ"
+						value: "折疊第 3 層"
 					"Fold Level 4":
-						value: "4段階折りたたむ"
+						value: "折疊第 4 層"
 					"Fold Level 5":
-						value: "5段階折りたたむ"
+						value: "折疊第 5 層"
 					"Fold Level 6":
-						value: "6段階折りたたむ"
+						value: "折疊第 6 層"
 					"Fold Level 7":
-						value: "7段階折りたたむ"
+						value: "折疊第 7 層"
 					"Fold Level 8":
-						value: "8段階折りたたむ"
+						value: "折疊第 8 層"
 					"Fold Level 9":
-						value: "9段階折りたたむ"
+						value: "折疊第 9 層"
 			"Reflow Selection":
-				value: "選択範囲をリフロー"
+				value: "重排選取區域"
 			Bookmark:
-				value: "ブックマーク"
+				value: "書籤"
 				submenu:
 					"View All":
-						value: "すべて表示"
+						value: "檢視全部書籤"
 					"Toggle Bookmark":
-						value: "ブックマークの切替"
+						value: "切換書籤"
 					"Jump to Next Bookmark":
-						value: "次のブックマークへ"
+						value: "移至下一個書籤"
 					"Jump to Previous Bookmark":
-						value: "前のブックマークへ"
+						value: "移至上一個書籤"
 			"Select Encoding":
-				value: "エンコーディング選択"
+				value: "切換編碼"
 			"Go to Line":
-				value: "指定行に移動"
+				value: "移動至指定行號"
 			"Select Grammar":
-				value: "文法を選択"
+				value: "選擇程式語言"
 	Selection:
 		value: "選択"
 		submenu:
