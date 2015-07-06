@@ -151,7 +151,7 @@ Menu:
 			"Toggle &Full Screen":
 				value: "切換全螢幕(&F)"
 			"Toggle Menu Bar":
-				value: "メニューバー切替"
+				value: "隱藏/顯示功能選單"
 			Panes:
 				value: "窗格"
 				submenu:

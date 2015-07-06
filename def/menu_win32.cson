@@ -151,7 +151,7 @@ Menu:
 			"Toggle &Full Screen":
 				value: "切換全螢幕(&F)"
 			"Toggle Menu Bar":
-				value: "メニューバー切替"
+				value: "隱藏/顯示功能選單"
 			Panes:
 				value: "窗格"
 				submenu:
@@ -271,6 +271,8 @@ Menu:
 			  value: "檢視使用條款"
 			"View &License":
 			  value: "檢視授權"
+			"Check for Update":
+			  value: "檢查更新"
 			"&Documentation":
 				value: "說明文件(&D)"
 			Roadmap:
