@@ -28,9 +28,9 @@ Context:
     "spell-check:correct-misspelling": "拼字檢查"
     "symbols-view:go-to-declaration": "移動至宣告"
   "atom-pane[data-active-item-path] .item-views":
-    "tree-view:reveal-active-file": "顯示於樹狀清單"
+    "tree-view:reveal-active-file": "顯示於檔案清單面板"
   "atom-pane[data-active-item-path] .tab.active":
-    "tree-view:reveal-active-file": "顯示於樹狀清單"
+    "tree-view:reveal-active-file": "顯示於檔案清單面板"
   ".overlayer":
     "autocomplete:toggle": "オートコンプリート"
     "grammar-selector:show": "文法を選択"

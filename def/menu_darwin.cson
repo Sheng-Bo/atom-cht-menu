@@ -221,7 +221,7 @@ Menu:
 			"Find Modified File":
 				value: "尋找修改過的檔案"
 	View:
-		value: "表示"
+		value: "檢視"
 		submenu:
 			Reload:
 				value: "重新載入文件"
@@ -253,28 +253,28 @@ Menu:
 					"Close Pane":
 						value: "關閉窗格"
 			Developer:
-				value: "開発"
+				value: "開發人員"
 				submenu:
 					"Open In Dev Mode...":
-						value: "開発モードで開く"
+						value: "在開發人員模式中開啟"
 					"Run Atom Specs":
-						value: "Atom Specs を実行"
+						value: "執行 Atom 規格測試"
 					"Run Package Specs":
-						value: "パッケージ Specs を実行"
+						value: "執行擴充套件規格測試"
 					"Toggle Developer Tools":
-						value: "デベロッパー ツール"
+						value: "打開/關閉開發人員工具"
 			"Increase Font Size":
-				value: "フォントサイズの拡大"
+				value: "放大文字尺寸"
 			"Decrease Font Size":
-				value: "フォントサイズの縮小"
+				value: "縮小文字尺寸"
 			"Reset Font Size":
-				value: "フォントサイズのリセット"
+				value: "重設文字尺寸"
 			"Toggle Soft Wrap":
-				value: "自動折り返しの切替"
+				value: "打開/關閉自動換行"
 			"Toggle Command Palette":
-				value: "コマンドパレット"
+				value: "打開/關閉指令面板"
 			"Toggle Tree View":
-				value: "ツリービュー"
+				value: "打開/關閉檔案清單面板"
 	Packages:
 		value: "擴充套件"
 	Window:
