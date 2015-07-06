@@ -3,7 +3,7 @@
   "main": "./lib/main",
   "version": "0.0.0",
   "description": "功能選單與右鍵選單之中文化",
-  "repository": "https://github.com/Sheng-Bo/atom-chinese-menu",
+  "repository": "https://github.com/Sheng-Bo/atom-cht-menu",
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
