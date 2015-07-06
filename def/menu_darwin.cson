@@ -84,9 +84,9 @@ Menu:
 					"Auto Indent":
 						value: "自動縮排"
 					"Move Line Up":
-						value: "將選取區向上移動"
+						value: "將選取行向上移動"
 					"Move Line Down":
-						value: "將選取區向下移動"
+						value: "將選取行向下移動"
 					"Duplicate Lines":
 						value: "複製"
 					"Delete Line":
@@ -94,22 +94,22 @@ Menu:
 					"Join Lines":
 						value: "合併"
 			Text:
-				value: "テキスト"
+				value: "文字"
 				submenu:
 					"Upper Case":
-						value: "大文字に変換"
+						value: "轉為大寫"
 					"Lower Case":
-						value: "小文字に変換"
+						value: "轉為小寫"
 					"Delete to End of Word":
-						value: "単語の末尾まで削除"
+						value: "刪除至本詞尾"
 					"Delete to Previous Word Boundary":
-						value: "前の単語の境界まで削除"
+						value: "刪除前一詞"
 					"Delete to Next Word Boundary":
-						value: "次の単語の境界まで削除"
+						value: "刪除後一詞"
 					"Delete Line":
 						value: "刪除"
 					Transpose:
-						value: "前後を入れ替え"
+						value: "前後倒置"
 			Folding:
 				value: "折りたたみ"
 				submenu:

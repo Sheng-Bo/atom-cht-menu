@@ -69,9 +69,9 @@ Menu:
 					"&Auto Indent":
 						value: "自動縮排(&A)"
 					"Move Line &Up":
-						value: "將選取區向上移動(&U)"
+						value: "將選取行向上移動(&U)"
 					"Move Line &Down":
-						value: "將選取區向下移動(&D)"
+						value: "將選取行向下移動(&D)"
 					"Du&plicate Lines":
 						value: "複製(&P)"
 					"D&elete Line":
@@ -79,22 +79,22 @@ Menu:
 					"&Join Lines":
 						value: "合併(&J)"
 			Text:
-				value: "テキスト"
+				value: "文字"
 				submenu:
 					"&Upper Case":
-						value: "大文字に変換(&U)"
+						value: "轉為大寫(&U)"
 					"&Lower Case":
-						value: "小文字に変換(&L)"
+						value: "轉為小寫(&L)"
 					"Delete to End of &Word":
-						value: "単語の末尾まで削除(&W)"
+						value: "刪除至本詞尾(&W)"
 					"Delete to Previous Word Boundary":
-						value: "前の単語の境界まで削除"
+						value: "刪除前一詞"
 					"Delete to Next Word Boundary":
-						value: "次の単語の境界まで削除"
+						value: "刪除後一詞"
 					"&Delete Line":
 						value: "刪除(&D)"
 					"&Transpose":
-						value: "前後を入れ替え(&T)"
+						value: "前後倒置(&T)"
 			Folding:
 				value: "折りたたみ"
 				submenu:
