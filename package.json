@@ -1,14 +1,14 @@
 {
   "name": "cht-menu",
   "main": "./lib/main",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "Atom 編輯器功能選單與右鍵選單之中文化。",
   "keywords": [
     "language",
     "traditional",
     "chineses",
     "繁體中文",
-    "中文化"    
+    "中文化"
   ],
   "repository": "https://github.com/Sheng-Bo/atom-cht-menu",
   "license": "MIT",
