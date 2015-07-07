@@ -4,9 +4,8 @@
   "version": "0.0.19",
   "description": "Atom 編輯器功能選單與右鍵選單之中文化。",
   "keywords": [
-    "language",
-    "traditional",
-    "chineses",
+    "Localization",
+    "Traditional Chinese",
     "繁體中文",
     "中文化"
   ],
