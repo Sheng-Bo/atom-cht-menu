@@ -37,15 +37,15 @@ Menu:
 				value: "開新視窗"
 			"New File":
 				value: "新增文件"
-			"Open...":
+			"Open…":
 				value: "打開..."
-			"Add Project Folder...":
+			"Add Project Folder…":
 				value: "新增專案資料夾..."
 			"Reopen Last Item":
 				value: "重新打開上一次關閉的文件..."
 			Save:
 				value: "儲存"
-			"Save As...":
+			"Save As…":
 				value: "另存新檔..."
 			"Save All":
 				value: "全部儲存"
@@ -255,7 +255,7 @@ Menu:
 			Developer:
 				value: "開發人員"
 				submenu:
-					"Open In Dev Mode...":
+					"Open In Dev Mode…":
 						value: "在開發人員模式中開啟"
 					"Run Atom Specs":
 						value: "執行 Atom 規格測試"
