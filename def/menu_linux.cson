@@ -6,17 +6,17 @@ Menu:
 				value: "開新視窗(&W)"
 			"&New File":
 				value: "新增文件(&N)"
-			"&Open File...":
+			"&Open File…":
 				value: "打開(&O)..."
-			"Open Folder...":
+			"Open Folder…":
 				value: "打開資料夾..."
-			"Add Project Folder...":
+			"Add Project Folder…":
 				value: "新增專案資料夾..."
 			"Reopen Last &Item":
 				value: "重新打開上一次關閉的文件(&I)"
 			"&Save":
 				value: "存檔(&S)"
-			"Save &As...":
+			"Save &As…":
 				value: "另存新檔(&A)..."
 			"Save A&ll":
 				value: "全部儲存(&L)"
@@ -180,7 +180,7 @@ Menu:
 			Developer:
 				value: "開發人員"
 				submenu:
-					"Open In &Dev Mode...":
+					"Open In &Dev Mode…":
 						value: "在開發人員模式中開啟(&D)..."
 					"Run &Atom Specs":
 						value: "執行 Atom 規格測試(&A)"
