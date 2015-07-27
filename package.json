@@ -1,5 +1,5 @@
 {
-  "name": "chinese-menu",
+  "name": "cht-menu",
   "main": "./lib/main",
   "version": "0.0.24",
   "description": "Atom 編輯器功能選單與右鍵選單之中文化。",
