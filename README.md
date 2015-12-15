@@ -2,14 +2,18 @@
 作者：陳聖博
 
 ## 0.0.28 (12-15-2015)
-* 對應 Atom 1.1.0 版。
-* 追加：
+* 對應 Atom 1.3.1 版。
+* 追加主選單項目：
   * About Atom
   * Close All Tags
-  * Check for Update
-
-
-
+* 修正右鍵選單項目：
+  * Toggle activate-power-mode
+  * Beautify editor contents
+  * Debug Atom Beautify
+  * Preview HTML
+  * Toggle git-control
+  * Run php-cs-fixer
+  * Toggle Minimap
 
 ## 0.0.21 (07-27-2015)
 * 對應 Atom 1.0.2 版。

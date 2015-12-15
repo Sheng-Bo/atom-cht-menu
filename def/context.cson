@@ -3,6 +3,7 @@ Context:
     "application:inspect": "檢查元素"
   "atom-workspace atom-text-editor:not(.mini)":
     "atom-beautify:beautify-editor": "美化程式碼"
+    "atom-beautify:help-debug-editor": "複製 Atom Beautify 除錯訊息"
   "atom-text-editor":
     "activate-power-mode:toggle": "打開／關閉 activate-power-mode"
     "color-picker:open": "色彩選取工具"

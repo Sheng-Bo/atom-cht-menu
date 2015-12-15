@@ -28,8 +28,6 @@ Menu:
 				value: "顯示全部視窗"
 			Quit:
 				value: "結束 Atom"
-			"Check for Update":
-				value: "檢查更新"
 	File:
 		value: "檔案"
 		submenu:
