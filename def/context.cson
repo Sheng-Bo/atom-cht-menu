@@ -1,9 +1,10 @@
 Context:
   "atom-workspace":
-    "application:inspect": "要素の検証"
+    "application:inspect": "檢查元素"
   "atom-text-editor":
+    "activate-power-mode:toggle": "打開／關閉 activate-power-mode"
     "color-picker:open": "色彩選取工具"
-    "minimap:toggle": "ミニマップ切替"
+    "minimap:toggle": "打開／關閉 Minimap"
   "atom-text-editor, .overlayer":
     "core:undo": "復原"
     "core:redo": "重做"

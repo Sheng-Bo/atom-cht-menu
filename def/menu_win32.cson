@@ -271,8 +271,6 @@ Menu:
 			  value: "檢視使用條款"
 			"View &License":
 			  value: "檢視授權"
-			"Check for Update":
-			  value: "檢查更新"
 			"&Documentation":
 				value: "說明文件(&D)"
 			Roadmap:
