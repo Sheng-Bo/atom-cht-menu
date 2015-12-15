@@ -55,6 +55,8 @@ Menu:
 				value: "關閉窗格"
 			"Close Window":
 				value: "關閉視窗"
+			"Close All Tabs":
+				value: "關閉所有頁籤"
 	Edit:
 		value: "編輯"
 		submenu:

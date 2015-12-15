@@ -283,6 +283,8 @@ Menu:
 				value: "回報問題"
 			"Search Issues":
 				value: "已知問題"
+			"About Atom":
+				value: "關於 Atom"
 			"Release Notes":
 				value: "版本資訊"
 			"Welcome Guide":

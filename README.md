@@ -1,6 +1,16 @@
 # Atom - 主功能選單與右鍵選單之中文化套件
 作者：陳聖博
 
+## 0.0.28 (12-15-2015)
+* 對應 Atom 1.1.0 版。
+* 追加：
+  * About Atom
+  * Close All Tags
+  * Check for Update
+
+
+
+
 ## 0.0.21 (07-27-2015)
 * 對應 Atom 1.0.2 版。
 * 修正：
@@ -9,7 +19,7 @@
   * Add Project Folder...
   * Save As...
   * Open In Dev Mode...
-  
+
 
 ## 0.0.17 (07-06-2015)
 功能選單以及右鍵選單中文化完畢，並於 Mac、Linux、Windows 下測試過。
