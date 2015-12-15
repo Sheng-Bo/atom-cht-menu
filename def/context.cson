@@ -1,10 +1,15 @@
 Context:
   "atom-workspace":
     "application:inspect": "檢查元素"
+  "atom-workspace atom-text-editor:not(.mini)":
+    "atom-beautify:beautify-editor": "美化程式碼"
   "atom-text-editor":
     "activate-power-mode:toggle": "打開／關閉 activate-power-mode"
     "color-picker:open": "色彩選取工具"
     "minimap:toggle": "打開／關閉 Minimap"
+    "atom-html-preview:toggle": "打開／關閉 HTML 預覽畫面"
+    "git-control:toggle": "打開／關閉 git-control 面板"
+    "php-cs-fixer:fix": "執行 php-cs-fixer"
   "atom-text-editor, .overlayer":
     "core:undo": "復原"
     "core:redo": "重做"
