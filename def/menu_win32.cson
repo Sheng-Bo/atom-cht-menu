@@ -21,7 +21,7 @@ Menu:
 			"Open Your Init Script":
 				value: "打開我的初始化指令檔"
 			"Open Your Keymap":
-				value: "打開我的鍵盤配置檔"
+				value: "打開我的快速鍵設定檔"
 			"Open Your Snippets":
 				value: "打開我的程式碼片段"
 			"Open Your Stylesheet":
