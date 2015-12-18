@@ -5,6 +5,7 @@ module.exports =
 
   delay: (that) ->
     CSON = require 'cson'
+    $ = requrie 'jquery'
     defM = CSON.load __dirname + "/../def/menu_#{process.platform}.cson"
     defC = CSON.load __dirname + "/../def/context.cson"
 
@@ -14,6 +15,9 @@ module.exports =
 
     # ContextMenu
     that.updateContextMenu(defC.Context)
+
+    # Settings
+    that.updateSettings()
 
   updateMenu: (menuList, def) ->
     return if not def
@@ -34,3 +38,10 @@ module.exports =
         continue if item.type is "separator"
         label = set[item.command]
         item.label = label if label?
+
+  updateSettings: (def) ->
+    atom.workspace.onDidChangeActivePaneItem (settings) =>
+			if settings?
+				if settings.uri?
+					if settings.uri.indexOf('atom://config') isnt -1
+            settings = require './../def/settings'
