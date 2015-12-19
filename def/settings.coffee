@@ -1,8 +1,7 @@
 module.exports =
 
-  init: () ->
+  localize: () ->
     $ = require 'jquery'
-
     pref = $('.settings-view')
 
     pref.find('a.icon.icon-settings').html('設定')
@@ -10,9 +9,39 @@ module.exports =
     pref.find('a.icon.icon-package').html('已安裝的擴充套件')
     pref.find('a.icon.icon-paintcan').html('佈景主題')
     pref.find('a.icon.icon-cloud-download').html('可用的更新')
-    pref.find('a.icon.icon-plus').html('安裝新的擴充套件')
+    pref.find('a.icon.icon-plus').html('新增擴充套件')
     pref.find('button.icon.icon-link-external').html('打開設定資料夾')
 
+    # Load all panels into DOM
+    lastMenu = pref.find('.panels-menu .active a')
+    pref.find('.panels-menu li a').click()
+    lastMenu.click()
+
+    # Init
+    localizeSettings()
+    localizeKeybindings()
+    localizePackages()
+    localizeThemes()
+    localizeUpdates()
+    localizeInstall()
+
+    # On switch panels
+    pref.find('.panels-menu li a').click ->
+      localizeSettings() if pref.find('.panels-menu .active').attr('name') is 'Settings'
+      localizeKeybindings() if pref.find('.panels-menu .active').attr('name') is 'Keybindings'
+      localizePackages() if pref.find('.panels-menu .active').attr('name') is 'Packages'
+      localizeThemes() if pref.find('.panels-menu .active').attr('name') is 'Themes'
+      localizeUpdates() if pref.find('.panels-menu .active').attr('name') is 'Updates'
+      localizeInstall() if pref.find('.panels-menu .active').attr('name') is 'Install'
+      return
+
+
+
+localizeSettings = () ->
+    $ = require 'jquery'
+    pref = $('.settings-view')
+
+    # Core Settings
     pref.find('div.block.section-heading.icon.icon-gear:contains("Core Settings")').html('核心設定')
     pref.find('#core-settings-note').html('以下為文字編輯功能以外的 Atom 功能設定，個別擴充套件可能有自己的設定。若要瀏覽某個擴充套件的設定，請到「<a class="link packages-open">已安裝的擴充套件</a>」卡片清單中選擇該套件的設定。')
 
@@ -96,7 +125,6 @@ module.exports =
     pref.find('label[for="editor.showLineNumbers"]').children('.setting-title').html('顯示行號')
     pref.find('label[for="editor.showLineNumbers"]').next('.setting-description').html('在文字編輯器的側面顯示行號。')
 
-
     pref.find('label[for="editor.softTabs"]').children('.setting-title').html('軟定位點')
     pref.find('label[for="editor.softTabs"]').next('.setting-description').html('如果<code>定位 (tab) 模式</code>設定為「自動判斷 (auto)」，而自動判斷結果卻失敗時，則當此設定打勾時，會改用「軟定位點 (soft)」，否則將用「硬定位點 (hard)」插入定位。')
 
@@ -124,34 +152,82 @@ module.exports =
     pref.find('label[for="editor.zoomFontWhenCtrlScrolling"]').children('.setting-title').html('使用 Ctrl + 滑鼠滾輪縮放文字大小')
     pref.find('label[for="editor.zoomFontWhenCtrlScrolling"]').next('.setting-description').html('使用 Ctrl 鍵和滑鼠滾輪上下捲動改變文字編輯器內的文字大小。')
 
-    # Keybindings
-    pref.find('.section-heading.icon.icon-keyboard:contains("Keybindings")').html('快速鍵設定')
 
-    pref.find('div.text.native-key-bindings').children().eq(1).html('您能覆寫這些快速鍵設定。只要按下 ')
-    pref.find('div.text.native-key-bindings').children().eq(3).html('圖示複製，並貼到您的 ')
-    pref.find('div.text.native-key-bindings').children().eq(4).html('快速鍵設定檔 ')
-    pref.find('div.text.native-key-bindings').append('<span>中修改即可。</span>')
 
-    pref.find('table th.keystroke').html('按鍵輸入')
-    pref.find('table th.command').html('執行指令')
-    pref.find('table th.source').html('來源')
-    pref.find('table th.selector').html('選取器')
+localizeKeybindings = () ->
+  $ = require 'jquery'
+  pref = $('.settings-view')
 
-    # Installed Packages
-    temp = pref.find('.section-heading.icon.icon-package:contains("Installed Packages")')
-    temp.contents().first()[0].textContent='已安裝的擴充套件' if temp.length > 0
+  pref.find('.section-heading.icon.icon-keyboard:contains("Keybindings")').html('快速鍵設定')
 
-    temp = pref.find('.sub-section-heading.icon.icon-package:contains("Deprecated Packages")')
-    temp.contents().first()[0].textContent='已過時的擴充套件' if temp.length > 0
+  pref.find('div.text.native-key-bindings span:contains("You can override these keybindings by copying ")').html('您能覆寫這些快速鍵設定。只要按下&nbsp;')
+  pref.find('div.text.native-key-bindings span:contains("and pasting them into ")').html('圖示複製，並貼到您的&nbsp;')
+  pref.find('div.text.native-key-bindings a:contains("your keymap file")').html('快速鍵設定檔&nbsp;')
+  pref.find('div.text.native-key-bindings').append('<span class="appended">中修改即可。</span>') if $('.appended').length == 0
 
-    temp = pref.find('.sub-section-heading.icon.icon-package:contains("Community Packages")')
-    temp.contents().first()[0].textContent='來自社群的擴充套件' if temp.length > 0
 
-    temp = pref.find('.sub-section-heading.icon.icon-package:contains("Core Packages")')
-    temp.contents().first()[0].textContent='核心擴充套件' if temp.length > 0
 
-    temp = pref.find('.sub-section-heading.icon.icon-package:contains("Development Packages")')
-    temp.contents().first()[0].textContent='發展中的擴充套件' if temp.length > 0
 
-    pref.find('button.btn.icon.icon-gear.settings').html('設定')
-    pref.find('button.btn.icon.icon-trashcan.uninstall-button').html('移除')
+
+
+
+
+  pref.find('table th.keystroke').html('按鍵輸入')
+  pref.find('table th.command').html('執行指令')
+  pref.find('table th.source').html('來源')
+  pref.find('table th.selector').html('選取器')
+
+
+
+localizePackages = () ->
+  $ = require 'jquery'
+  pref = $('.settings-view')
+
+  temp = pref.find('.section-heading.icon.icon-package:contains("Installed Packages")')
+  temp.contents().first()[0].textContent='已安裝的擴充套件' if temp.length > 0
+
+  temp = pref.find('.sub-section-heading.icon.icon-package:contains("Deprecated Packages")')
+  temp.contents().first()[0].textContent='已過期的擴充套件' if temp.length > 0
+
+  pref.find('section.sub-section.deprecated-packages p').html('Atom 不會載入過期的擴充套件。這些擴充套件可能提供更新。')
+
+  temp = pref.find('.sub-section-heading.icon.icon-package:contains("Community Packages")')
+  temp.contents().first()[0].textContent='來自社群的擴充套件' if temp.length > 0
+
+  temp = pref.find('.sub-section-heading.icon.icon-package:contains("Core Packages")')
+  temp.contents().first()[0].textContent='核心擴充套件' if temp.length > 0
+
+  temp = pref.find('.sub-section-heading.icon.icon-package:contains("Development Packages")')
+  temp.contents().first()[0].textContent='發展中的擴充套件' if temp.length > 0
+
+  setInterval((->
+    if pref.find('.package-container .btn-toolbar').length > 0
+      pref.find('button:contains("Update")').html('更新')
+      pref.find('button:contains("Install Alternative")').html('安裝新版')
+      pref.find('button:contains("Install")').html('安裝')
+      pref.find('button:contains("Settings")').html('設定')
+      pref.find('button:contains("Uninstall")').html('移除')
+      pref.find('button .disable-text:contains("Disable")').html('停用')
+      pref.find('button .disable-text:contains("Enable")').html('啟用')
+    return
+  ), 0)
+
+
+
+localizeThemes = () ->
+  $ = require 'jquery'
+  pref = $('.settings-view')
+
+  pref.find('.section-heading.icon.icon-device-desktop:contains("Choose a Theme")').html('選擇一個佈景主題')
+
+
+
+localizeUpdates = () ->
+  $ = require 'jquery'
+  pref = $('.settings-view')
+
+
+
+localizeInstall = () ->
+  $ = require 'jquery'
+  pref = $('.settings-view')
