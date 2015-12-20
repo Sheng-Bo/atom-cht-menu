@@ -28,6 +28,8 @@ Menu:
 				value: "關閉視窗(&E)"
 			"Quit":
 				value: "結束 Atom"
+			"Close All Tabs":
+			value: "關閉所有頁籤"
 	"&Edit":
 		value: "編輯(&E)"
 		submenu:

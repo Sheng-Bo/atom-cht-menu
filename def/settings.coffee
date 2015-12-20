@@ -100,16 +100,16 @@ localizeSettings = () ->
     pref.find('atom-text-editor[id="editor.fontSize"]').parents('.controls').eq(0).prev('label').children('.setting-title').html('文字大小')
     pref.find('atom-text-editor[id="editor.fontSize"]').parents('.controls').eq(0).prev('label').children('.setting-description').html('文字編輯器內的文字高度，單位：像素 (px)')
 
-    pref.find('atom-text-editor[id="editor.invisibles.cr"]').parents('.controls').eq(0).prev('label').children('.setting-title').html('斷行 (Cr) 顯示為：')
+    pref.find('atom-text-editor[id="editor.invisibles.cr"]').parents('.controls').eq(0).prev('label').children('.setting-title').html('斷行 (Cr) 顯示為:')
     pref.find('atom-text-editor[id="editor.invisibles.cr"]').parents('.controls').eq(0).prev('label').children('.setting-description').html('<code>顯示隱藏字元</code>設定打勾時，微軟格式的斷行將用以下字元表示。')
 
-    pref.find('atom-text-editor[id="editor.invisibles.eol"]').parents('.controls').eq(0).prev('label').children('.setting-title').html('斷行 (Eol) 顯示為：')
+    pref.find('atom-text-editor[id="editor.invisibles.eol"]').parents('.controls').eq(0).prev('label').children('.setting-title').html('斷行 (Eol) 顯示為:')
     pref.find('atom-text-editor[id="editor.invisibles.eol"]').parents('.controls').eq(0).prev('label').children('.setting-description').html('<code>顯示隱藏字元</code>設定打勾時，\\n 格式的斷行將用以下字元表示。')
 
-    pref.find('atom-text-editor[id="editor.invisibles.space"]').parents('.controls').eq(0).prev('label').children('.setting-title').html('空白 (space) 顯示為：')
+    pref.find('atom-text-editor[id="editor.invisibles.space"]').parents('.controls').eq(0).prev('label').children('.setting-title').html('空白 (space) 顯示為:')
     pref.find('atom-text-editor[id="editor.invisibles.space"]').parents('.controls').eq(0).prev('label').children('.setting-description').html('<code>顯示隱藏字元</code>設定打勾時，行首與行尾的空白將用以下字元表示。')
 
-    pref.find('atom-text-editor[id="editor.invisibles.tab"]').parents('.controls').eq(0).prev('label').children('.setting-title').html('定位點 (tab) 顯示為：')
+    pref.find('atom-text-editor[id="editor.invisibles.tab"]').parents('.controls').eq(0).prev('label').children('.setting-title').html('定位點 (tab) 顯示為:')
     pref.find('atom-text-editor[id="editor.invisibles.tab"]').parents('.controls').eq(0).prev('label').children('.setting-description').html('<code>顯示隱藏字元</code>設定打勾時，\\t 定位點將用以下字元表示。')
 
     pref.find('atom-text-editor[id="editor.lineHeight"]').parents('.controls').eq(0).prev('label').children('.setting-title').html('行高')
