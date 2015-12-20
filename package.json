@@ -1,7 +1,7 @@
 {
   "name": "cht-menu",
   "main": "./lib/main",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Atom 編輯器功能選單與右鍵選單之中文化。",
   "keywords": [
     "Localization",
