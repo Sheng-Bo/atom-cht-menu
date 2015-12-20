@@ -12,11 +12,6 @@ module.exports =
     pref.find('a.icon.icon-plus').html('新增擴充套件')
     pref.find('button.icon.icon-link-external').html('打開設定資料夾')
 
-    # Load all panels into DOM
-    lastMenu = pref.find('.panels-menu .active a')
-    pref.find('.panels-menu li a').click()
-    lastMenu.click()
-
     # Init
     localizeSettings()
     localizeKeybindings()
@@ -24,16 +19,25 @@ module.exports =
     localizeThemes()
     localizeUpdates()
     localizeInstall()
+    localizeButtons()
 
-    # On switch panels
-    pref.find('.panels-menu li a').click ->
-      localizeSettings() if pref.find('.panels-menu .active').attr('name') is 'Settings'
-      localizeKeybindings() if pref.find('.panels-menu .active').attr('name') is 'Keybindings'
-      localizePackages() if pref.find('.panels-menu .active').attr('name') is 'Packages'
-      localizeThemes() if pref.find('.panels-menu .active').attr('name') is 'Themes'
-      localizeUpdates() if pref.find('.panels-menu .active').attr('name') is 'Updates'
-      localizeInstall() if pref.find('.panels-menu .active').attr('name') is 'Install'
-      return
+    if pref.find('.panels').children().length < 6
+
+      # On switch panels
+      pref.find('.panels-menu li a').unbind('click').click ->
+        localizeSettings() if pref.find('.panels-menu .active').attr('name') is 'Settings'
+        localizeKeybindings() if pref.find('.panels-menu .active').attr('name') is 'Keybindings'
+        localizePackages() if pref.find('.panels-menu .active').attr('name') is 'Packages'
+        localizeThemes() if pref.find('.panels-menu .active').attr('name') is 'Themes'
+        localizeUpdates() if pref.find('.panels-menu .active').attr('name') is 'Updates'
+        localizeInstall() if pref.find('.panels-menu .active').attr('name') is 'Install'
+        localizeButtons()
+        return
+
+      # Load all panels into DOM
+      lastMenu = pref.find('.panels-menu .active a')
+      pref.find('.panels-menu li a').click()
+      lastMenu.click()
 
 
 
@@ -160,17 +164,11 @@ localizeKeybindings = () ->
 
   pref.find('.section-heading.icon.icon-keyboard:contains("Keybindings")').html('快速鍵設定')
 
-  pref.find('div.text.native-key-bindings span:contains("You can override these keybindings by copying ")').html('您能覆寫這些快速鍵設定。只要按下&nbsp;')
-  pref.find('div.text.native-key-bindings span:contains("and pasting them into ")').html('圖示複製，並貼到您的&nbsp;')
-  pref.find('div.text.native-key-bindings a:contains("your keymap file")').html('快速鍵設定檔&nbsp;')
-  pref.find('div.text.native-key-bindings').append('<span class="appended">中修改即可。</span>') if $('.appended').length == 0
-
-
-
-
-
-
-
+  temp = pref.find('.keybinding-panel div.text.native-key-bindings').children()
+  temp.eq(1).html('您能覆寫這些快速鍵設定。只要按下&nbsp;')
+  temp.eq(3).html('圖示複製，並貼到您的&nbsp;')
+  temp.eq(4).html('快速鍵設定檔&nbsp;')
+  temp.eq(4).after('<span>中修改即可。</span>') if temp.length == 5
 
   pref.find('table th.keystroke').html('按鍵輸入')
   pref.find('table th.command').html('執行指令')
@@ -200,18 +198,6 @@ localizePackages = () ->
   temp = pref.find('.sub-section-heading.icon.icon-package:contains("Development Packages")')
   temp.contents().first()[0].textContent='發展中的擴充套件' if temp.length > 0
 
-  setInterval((->
-    if pref.find('.package-container .btn-toolbar').length > 0
-      pref.find('button:contains("Update")').html('更新')
-      pref.find('button:contains("Install Alternative")').html('安裝新版')
-      pref.find('button:contains("Install")').html('安裝')
-      pref.find('button:contains("Settings")').html('設定')
-      pref.find('button:contains("Uninstall")').html('移除')
-      pref.find('button .disable-text:contains("Disable")').html('停用')
-      pref.find('button .disable-text:contains("Enable")').html('啟用')
-    return
-  ), 0)
-
 
 
 localizeThemes = () ->
@@ -220,14 +206,72 @@ localizeThemes = () ->
 
   pref.find('.section-heading.icon.icon-device-desktop:contains("Choose a Theme")').html('選擇一個佈景主題')
 
+  temp = pref.find('.themes-panel div.text.native-key-bindings').children()
+  temp.eq(0).html('您也能直接修改&nbsp;')
+  temp.eq(1).html('Atom 樣式表&nbsp;')
+  temp.eq(1).after('<span>來手動調整外觀與顏色。</span>') if temp.length == 2
+
+  pref.find('label > div.setting-title.themes-label.text').eq(0).html('介面的佈景主題')
+  pref.find('label > div.setting-description.text.theme-description').eq(0).html('頁籤、狀態列、檔案清單面板、下拉選單的外觀。')
+
+  pref.find('label > div.setting-title.themes-label.text').eq(1).html('語法的佈景主題')
+  pref.find('label > div.setting-description.text.theme-description').eq(1).html('程式語法的顏色與文字編輯器的外觀。')
+
+  temp = pref.find('.section-heading.icon.icon-paintcan:contains("Installed Themes")')
+  temp.contents().first()[0].textContent='已安裝的佈景主題' if temp.length > 0
+
+  temp = pref.find('.sub-section-heading.icon.icon-paintcan:contains("Community Themes")')
+  temp.contents().first()[0].textContent='來自社群的佈景主題' if temp.length > 0
+
+  temp = pref.find('.sub-section-heading.icon.icon-paintcan:contains("Core Themes")')
+  temp.contents().first()[0].textContent='核心佈景主題' if temp.length > 0
+
+  temp = pref.find('.sub-section-heading.icon.icon-paintcan:contains("Development Themes")')
+  temp.contents().first()[0].textContent='發展中的佈景主題' if temp.length > 0
+
 
 
 localizeUpdates = () ->
   $ = require 'jquery'
   pref = $('.settings-view')
 
+  temp = pref.find('.section-heading.icon.icon-cloud-download:contains("Available Updates")')
+  temp.contents().last()[0].textContent='可用的更新' if temp.length > 0
+
+  pref.find('.alert-info.icon.icon-hourglass').html('檢查更新中...')
+  pref.find('.alert-info.icon.icon-heart').html('您所有的擴充套件都已經是最新版本了。')
+
+
+
 
 
 localizeInstall = () ->
   $ = require 'jquery'
   pref = $('.settings-view')
+
+
+
+
+
+
+localizeButtons = () ->
+  $ = require('jquery')
+  pref = $('.settings-view')
+  counter = 0
+  si = setInterval((->
+    if counter < 1 then counter++ else clearInterval si
+    if pref.find('.package-container .btn-toolbar').length > 0
+      pref.find('button:contains("Packages")').html('擴充套件');
+      pref.find('button:contains("Themes")').html('佈景主題');
+      pref.find('button:contains("Check for Updates")').html('檢查更新');
+      pref.find('button:contains("更新全部")').html('安裝新版');
+      pref.find('button:contains("Update")').html('更新');
+      pref.find('button:contains("Install Alternative")').html('安裝新版');
+      pref.find('button:contains("Install")').html('安裝');
+      pref.find('button:contains("Settings")').html('設定');
+      pref.find('button:contains("Uninstall")').html('移除');
+      pref.find('button .disable-text:contains("Disable")').html('停用');
+      pref.find('button .disable-text:contains("Enable")').html('啟用');
+    return
+  ), 0)
+  return
