@@ -1,6 +1,7 @@
 module.exports =
 
   activate: (state) ->
+    # console.log atom
     setTimeout(@delay, 0, this)
 
   delay: (that) ->
@@ -42,7 +43,14 @@ module.exports =
     settings = require './../def/settings'
     settings.localize()
 
-    atom.workspace.onDidChangeActivePaneItem (settings) =>
+    atom.workspace.onDidOpen (settings) ->
+      if settings?
+        if settings.uri?
+          if settings.uri.indexOf('atom://config') isnt -1
+            settings = require './../def/settings'
+            settings.localize()
+
+    atom.workspace.onDidChangeActivePaneItem (settings) ->
       if settings?
         if settings.uri?
           if settings.uri.indexOf('atom://config') isnt -1

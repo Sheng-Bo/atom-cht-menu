@@ -9,36 +9,43 @@ module.exports =
     pref.find('a.icon.icon-package').html('已安裝的擴充套件')
     pref.find('a.icon.icon-paintcan').html('佈景主題')
     pref.find('a.icon.icon-cloud-download').html('可用的更新')
-    pref.find('a.icon.icon-plus').html('新增擴充套件')
+    pref.find('a.icon.icon-plus').html('新增套件或主題')
     pref.find('button.icon.icon-link-external').html('打開設定資料夾')
 
     # Init
-    localizeSettings()
-    localizeKeybindings()
-    localizePackages()
-    localizeThemes()
-    localizeUpdates()
-    localizeInstall()
-    localizeButtons()
+    # localizeSettings()
+    # localizeKeybindings()
+    # localizePackages()
+    # localizeThemes()
+    # localizeUpdates()
+    # localizeInstall()
+    # localizeButtons()
 
     if pref.find('.panels').children().length < 6
 
       # On switch panels
-      pref.find('.panels-menu li a').unbind('click').click ->
-        localizeSettings() if pref.find('.panels-menu .active').attr('name') is 'Settings'
-        localizeKeybindings() if pref.find('.panels-menu .active').attr('name') is 'Keybindings'
-        localizePackages() if pref.find('.panels-menu .active').attr('name') is 'Packages'
-        localizeThemes() if pref.find('.panels-menu .active').attr('name') is 'Themes'
-        localizeUpdates() if pref.find('.panels-menu .active').attr('name') is 'Updates'
-        localizeInstall() if pref.find('.panels-menu .active').attr('name') is 'Install'
-        localizeButtons()
-        return
+      # pref.find('.panels-menu li a').unbind('click').click ->
+      #   localizeSettings() if pref.find('.panels-menu .active').attr('name') is 'Settings'
+      #   localizeKeybindings() if pref.find('.panels-menu .active').attr('name') is 'Keybindings'
+      #   localizePackages() if pref.find('.panels-menu .active').attr('name') is 'Packages'
+      #   localizeThemes() if pref.find('.panels-menu .active').attr('name') is 'Themes'
+      #   localizeUpdates() if pref.find('.panels-menu .active').attr('name') is 'Updates'
+      #   localizeInstall() if pref.find('.panels-menu .active').attr('name') is 'Install'
+      #   return
 
       # Load all panels into DOM
       lastMenu = pref.find('.panels-menu .active a')
       pref.find('.panels-menu li a').click()
       lastMenu.click()
 
+      # Init
+      localizeSettings()
+      localizeKeybindings()
+      localizePackages()
+      localizeThemes()
+      localizeUpdates()
+      localizeInstall()
+      localizeButtons()
 
 
 localizeSettings = () ->
@@ -151,7 +158,7 @@ localizeSettings = () ->
     pref.find('atom-text-editor[id="editor.undoGroupingInterval"]').parents('.controls').eq(0).prev('label').children('.setting-description').html('編輯過程產生的復原動作歷史紀錄，將以此時間長度做合併，單位：毫秒。')
 
     pref.find('label[for="editor.useShadowDOM"]').children('.setting-title').html('啟用 Shadow DOM')
-    pref.find('label[for="editor.useShadowDOM"]').next('.setting-description').html('如果您遇到擴充套件或者佈景主題在變更軟體外觀上的問題，請取消此設定，禁止 Atom 使用 Shadow DOM 產生元件。您也可以針對該擴充套件或佈景主題到 GitHub 提出 issue。(本設定之後將被廢棄。)')
+    pref.find('label[for="editor.useShadowDOM"]').next('.setting-description').html('如果您遇到擴充套件或者佈景主題在變更軟體外觀上的問題，請取消此設定，禁止 Atom 使用 Web 元件繪製軟體介面。您也可以進入該擴充套件或佈景主題設定頁面提出 issue。(本設定之後將被廢棄。)')
 
     pref.find('label[for="editor.zoomFontWhenCtrlScrolling"]').children('.setting-title').html('使用 Ctrl + 滑鼠滾輪縮放文字大小')
     pref.find('label[for="editor.zoomFontWhenCtrlScrolling"]').next('.setting-description').html('使用 Ctrl 鍵和滑鼠滾輪上下捲動改變文字編輯器內的文字大小。')
@@ -249,29 +256,50 @@ localizeInstall = () ->
   $ = require 'jquery'
   pref = $('.settings-view')
 
+  # console.log 'add Packages'
 
+  si = setInterval((->
+    pref.find('.section-heading.icon.icon-cloud-download:contains("Install Packages")').html('新增擴充套件')
+    pref.find('.section-heading.icon.icon-cloud-download:contains("Install Themes")').html('新增佈景主題')
 
+    temp = pref.find('span:contains("Packages are published to ")').parent().children()
+    temp.eq(1).html('擴充套件皆發佈在 ')
+    temp.eq(3).html (index, html) ->
+      html.replace ' and are installed to ', ' 並安裝於 '
+    temp.eq(3).after('<span> 資料夾下。</span>') if temp.length == 4
 
+    temp = pref.find('span:contains("Themes are published to ")').parent().children()
+    temp.eq(1).html('佈景主題皆發佈在 ')
+    temp.eq(3).html (index, html) ->
+      html.replace ' and are installed to ', ' 並安裝於 '
+    temp.eq(3).after('<span> 資料夾下。</span>') if temp.length == 4
 
+    pref.find('.section-heading.icon.icon-star:contains("Featured Packages")').html('熱門擴充套件')
+    pref.find('.section-heading.icon.icon-star:contains("Featured Themes")').html('熱門佈景主題')
+
+    return
+  ), 0)
 
 localizeButtons = () ->
   $ = require('jquery')
   pref = $('.settings-view')
-  counter = 0
+
+  # console.log 'buttons'
+
   si = setInterval((->
-    if counter < 1 then counter++ else clearInterval si
-    if pref.find('.package-container .btn-toolbar').length > 0
-      pref.find('button:contains("Packages")').html('擴充套件');
-      pref.find('button:contains("Themes")').html('佈景主題');
-      pref.find('button:contains("Check for Updates")').html('檢查更新');
-      pref.find('button:contains("更新全部")').html('安裝新版');
-      pref.find('button:contains("Update")').html('更新');
-      pref.find('button:contains("Install Alternative")').html('安裝新版');
-      pref.find('button:contains("Install")').html('安裝');
-      pref.find('button:contains("Settings")').html('設定');
-      pref.find('button:contains("Uninstall")').html('移除');
-      pref.find('button .disable-text:contains("Disable")').html('停用');
-      pref.find('button .disable-text:contains("Enable")').html('啟用');
+    pref.find('button:contains("Packages")').html '擴充套件'
+    pref.find('button:contains("Themes")').html '佈景主題'
+    pref.find('button:contains("Check for Updates")').html '檢查更新'
+    pref.find('button:contains("Update All")').html '更新全部'
+    pref.find('button:contains("Update to")').html (index, html) ->
+      html.replace 'Update to', '更新至'
+    pref.find('button:contains("Update")').html '更新'
+    pref.find('button:contains("Install Alternative")').html '安裝新版'
+    pref.find('button:contains("Install")').html '安裝'
+    pref.find('button:contains("Settings")').html '設定'
+    pref.find('button:contains("Uninstall")').html '移除'
+    pref.find('button .disable-text:contains("Disable")').html '停用'
+    pref.find('button .disable-text:contains("Enable")').html '啟用'
     return
   ), 0)
   return
