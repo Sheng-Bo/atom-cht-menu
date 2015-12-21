@@ -1,7 +1,7 @@
 # Atom - 繁體中文化：主選單、右鍵選單以及大部分的偏好設定。
 作者：陳聖博
 
-<img src="screenshot/01.jpeg" width="70%">
+<img src="https://raw.githubusercontent.com/Sheng-Bo/atom-cht-menu/master/screenshot/01.jpeg" width="70%">
 
 ## 0.1.8 (12-20-2015)
 * 對應 Atom 1.3.2 版。
