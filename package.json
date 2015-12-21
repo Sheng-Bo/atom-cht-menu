@@ -1,7 +1,7 @@
 {
   "name": "cht-menu",
   "main": "./lib/main",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "繁體中文化：主選單、右鍵選單以及大部分的偏好設定。",
   "keywords": [
     "Localization",
