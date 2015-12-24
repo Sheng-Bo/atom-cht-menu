@@ -10,7 +10,7 @@ module.exports =
     pref.find('a.icon.icon-paintcan').html('佈景主題')
     pref.find('a.icon.icon-cloud-download').html('可用的更新')
     pref.find('a.icon.icon-plus').html('新增套件或主題')
-    pref.find('button.icon.icon-link-external').html('打開設定資料夾')
+    pref.find('button.icon.icon-link-external:contains("Open Config Folder")').html('打開設定資料夾')
 
     # Init
     # localizeSettings()
@@ -32,6 +32,15 @@ module.exports =
       #   localizeUpdates() if pref.find('.panels-menu .active').attr('name') is 'Updates'
       #   localizeInstall() if pref.find('.panels-menu .active').attr('name') is 'Install'
       #   return
+
+      # Assign font(s) while running under Windows OS
+      if process.platform == 'win32'
+        pref.css 'font-size', '12px'
+
+        font = atom.config.get('editor.fontFamily')
+        if font.length != 0
+        then pref.css 'font-family', font
+        else pref.css 'font-family', '微軟正黑體'
 
       # Load all panels into DOM
       lastMenu = pref.find('.panels-menu .active a')
@@ -207,6 +216,12 @@ localizePackages = () ->
   temp = pref.find('.sub-section-heading.icon.icon-package:contains("Development Packages")')
   temp.contents().first()[0].textContent='發展中的擴充套件' if temp.length > 0
 
+  si = setInterval((->
+    temp = pref.find('.icon.icon-dashboard.native-key-bindings:contains("This package added ")')
+    if temp.length != 0
+      temp.html temp.html().replace('This package added ', '這個套件增加了 ').replace(' to startup time.', ' 的啟動時間。')
+  ), 0)
+
 
 
 localizeThemes = () ->
@@ -302,6 +317,13 @@ localizeButtons = () ->
     pref.find('button:contains("Uninstall")').html '移除'
     pref.find('button .disable-text:contains("Disable")').html '停用'
     pref.find('button .disable-text:contains("Enable")').html '啟用'
+
+    pref.find('button:contains("View on Atom.io")').html '在 Atom.io 瀏覽此套件'
+    pref.find('button:contains("Report Issue")').html '提出 Issue'
+    pref.find('button:contains("CHANGELOG")').html '更新紀錄'
+    pref.find('button:contains("LICENSE")').html '授權條款'
+    pref.find('button:contains("View Code")').html '檢視原始碼'
+
     return
   ), 0)
   return
