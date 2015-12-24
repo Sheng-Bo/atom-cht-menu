@@ -4,7 +4,6 @@
 <img src="https://raw.githubusercontent.com/Sheng-Bo/atom-cht-menu/master/screenshot/01.jpeg" width="70%">
 
 ## 0.1.12 (12-20-2015)
-* 對應 Atom 1.3.2 版。
 * 偏好設定：
   * 擴充套件內頁按鈕與載入時間的中文化。
   * Windows 下，當使用者已經指派編輯器字體時，偏好設定也會以該字體顯示，否則自動指派微軟正黑體作為偏好設定字體。
