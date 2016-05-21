@@ -8,16 +8,16 @@ Menu:
 				value: "檢視授權"
 			"Preferences…":
 				value: "偏好設定..."
-			"Open Your Config":
+			"Config…":
 				value: "打開我的設定"
-			"Open Your Init Script":
-				value: "打開我的初始化指令檔"
-			"Open Your Keymap":
-				value: "打開我的快速鍵設定檔"
-			"Open Your Snippets":
-				value: "打開我的程式碼片段"
-			"Open Your Stylesheet":
-				value: "打開我的 Atom 樣式表"
+			"Init Script…":
+				value: "初始化指令檔"
+			"Keymap…":
+				value: "快速鍵設定檔"
+			"Snippets…":
+				value: "程式碼片段"
+			"Stylesheet…":
+				value: "Atom 樣式表"
 			"Install Shell Commands":
 				value: "安裝 Shell 命令列工具"
 			"Hide Atom":
