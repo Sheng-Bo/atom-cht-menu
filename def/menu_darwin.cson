@@ -39,8 +39,13 @@ Menu:
 				value: "打開..."
 			"Add Project Folder…":
 				value: "新增專案資料夾..."
-			"Reopen Last Item":
-				value: "重新打開上一次關閉的文件..."
+			"Open Recent":
+				value: "開啟最近的..."
+				submenu:
+					"Reopen Closed File":
+						value: "重新開啟上次關閉的文件"
+					"Clear List":
+						value: "清除列表"
 			Save:
 				value: "儲存"
 			"Save As…":
