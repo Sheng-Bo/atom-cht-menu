@@ -6,18 +6,16 @@ Menu:
 				value: "關於 Atom"
 			"View License":
 				value: "檢視授權"
-			"Check for Update":
-				value: "檢查更新"
 			"Preferences…":
 				value: "偏好設定..."
 			"Config…":
-				value: "Atom 設定檔..."
+				value: "設定檔..."
 			"Init Script…":
 				value: "初始化指令檔..."
 			"Keymap…":
 				value: "快速鍵設定檔..."
 			"Snippets…":
-				value: "程式碼片段庫..."
+				value: "程式碼片段檔..."
 			"Stylesheet…":
 				value: "Atom 樣式表..."
 			"Install Shell Commands":
@@ -216,6 +214,8 @@ Menu:
 				value: "取代下一個項目"
 			"Replace All":
 				value: "全部取代"
+			"Clear History":
+				value: "清除歷史記錄"
 			"Find Buffer":
 				value: "尋找編輯中文件"
 			"Find File":
@@ -259,6 +259,8 @@ Menu:
 				submenu:
 					"Open In Dev Mode…":
 						value: "在開發人員模式中開啟"
+					"Reload Window":
+						value: "重新載入視窗"
 					"Run Atom Specs":
 						value: "執行 Atom 規格測試"
 					"Run Package Specs":
