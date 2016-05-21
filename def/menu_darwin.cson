@@ -6,18 +6,20 @@ Menu:
 				value: "關於 Atom"
 			"View License":
 				value: "檢視授權"
+			"Check for Update":
+				value: "檢查更新"
 			"Preferences…":
 				value: "偏好設定..."
 			"Config…":
-				value: "打開我的設定"
+				value: "Atom 設定檔..."
 			"Init Script…":
-				value: "初始化指令檔"
+				value: "初始化指令檔..."
 			"Keymap…":
-				value: "快速鍵設定檔"
+				value: "快速鍵設定檔..."
 			"Snippets…":
-				value: "程式碼片段"
+				value: "程式碼片段庫..."
 			"Stylesheet…":
-				value: "Atom 樣式表"
+				value: "Atom 樣式表..."
 			"Install Shell Commands":
 				value: "安裝 Shell 命令列工具"
 			"Hide Atom":
