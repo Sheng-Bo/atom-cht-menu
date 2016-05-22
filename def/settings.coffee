@@ -65,14 +65,14 @@ localizeSettings = () ->
     pref.find('div.block.section-heading.icon.icon-gear:contains("Core Settings")').html('核心設定')
     pref.find('#core-settings-note').html('以下為文字編輯功能以外的 Atom 功能設定，個別擴充套件可能有自己的設定。若要瀏覽某個擴充套件的設定，請到「<a class="link packages-open">已安裝的擴充套件</a>」卡片清單中選擇該套件的設定。')
 
+    pref.find('label[for="core.allowPendingPaneItems"]').children('.setting-title').html('啟用未決頁籤功能')
+    pref.find('label[for="core.allowPendingPaneItems"]').next('.setting-description').html('允許在一個統一的頁籤內連續預覽文件，而不需將文件一一加入窗格。例如：在檔案清單面板內以滑鼠單擊數個文件時，即可在未決頁籤內連續預覽。頁籤上檔名為斜體時，表示是未決狀態，再以滑鼠點擊頁籤時，將決定該頁籤載入的文件。')
     pref.find('label[for="core.audioBeep"]').children('.setting-title').html('嗶嗶聲')
     pref.find('label[for="core.audioBeep"]').next('.setting-description').html('當操作無效或無結果可顯示時，以系統嗶嗶聲警告。')
-
 		pref.find('label[for="core.automaticallyUpdate"]').children('.setting-title').html('自動更新')
 		pref.find('label[for="core.automaticallyUpdate"]').next('.setting-description').html('當有新版本的時候，自動更新 Atom。')
-		pref.find('label[for="core.automaticallyUpdate"]').children('.setting-title').html('自動更新')
-		pref.find('label[for="core.automaticallyUpdate"]').next('.setting-description').html('當有新版本的時候，自動更新 Atom。')
-
+		pref.find('label[for="core.closeEmptyWindows"]').children('.setting-title').html('自動關閉空視窗')
+		pref.find('label[for="core.closeEmptyWindows"]').next('.setting-description').html('執行關閉頁籤指令時，若該視窗已無其他開啟的頁籤或窗格，則關閉該視窗。')
     pref.find('label[for="core.autoHideMenuBar"]').children('.setting-title').html('自動隱藏主選單')
     pref.find('label[for="core.autoHideMenuBar"]').next('.setting-description').html('自動隱藏主選單後，可以按下 Alt 鍵使其再次浮現。這項設定只有 Windows 和 Linux 作業系統支援。')
     pref.find('label[for="core.destroyEmptyPanes"]').children('.setting-title').html('自動關閉空窗格')
@@ -116,6 +116,8 @@ localizeSettings = () ->
 
     pref.find('atom-text-editor[id="editor.fontSize"]').parents('.controls').eq(0).prev('label').children('.setting-title').html('文字大小')
     pref.find('atom-text-editor[id="editor.fontSize"]').parents('.controls').eq(0).prev('label').children('.setting-description').html('文字編輯器內的文字高度，單位：像素 (px)')
+
+    pref.find('.sub-section-heading.has-items:contains("Invisibles")').html('隱藏字元')
 
     pref.find('atom-text-editor[id="editor.invisibles.cr"]').parents('.controls').eq(0).prev('label').children('.setting-title').html('斷行 (Cr) 顯示為:')
     pref.find('atom-text-editor[id="editor.invisibles.cr"]').parents('.controls').eq(0).prev('label').children('.setting-description').html('<code>顯示隱藏字元</code>設定打勾時，微軟格式的斷行將用以下字元表示。')
@@ -165,8 +167,11 @@ localizeSettings = () ->
     pref.find('atom-text-editor[id="editor.softWrapHangingIndent"]').parents('.controls').eq(0).prev('label').children('.setting-title').html('自動換行時的凸排長度')
     pref.find('atom-text-editor[id="editor.softWrapHangingIndent"]').parents('.controls').eq(0).prev('label').children('.setting-description').html('<code>自動換行</code>設定打勾時，第二行以下額外縮排的長度，單位：字元。')
 
-    pref.find('select[id="editor.tabLength"]').prev('label').children('.setting-title').html('定位點 (tab) 長度')
-    pref.find('select[id="editor.tabLength"]').prev('label').children('.setting-description').html('在此指定空白字元的數量，用以代表每個定位點 (tab) 的長度。')
+    # pref.find('select[id="editor.tabLength"]').prev('label').children('.setting-title').html('定位點 (tab) 長度')
+    # pref.find('select[id="editor.tabLength"]').prev('label').children('.setting-description').html('在此指定空白字元的數量，用以代表每個定位點 (tab) 的長度。')
+
+    pref.find('atom-text-editor[id="editor.tabLength"]').parents('.controls').eq(0).prev('label').children('.setting-title').html('定位點 (tab) 長度')
+    pref.find('atom-text-editor[id="editor.tabLength"]').parents('.controls').eq(0).prev('label').children('.setting-description').html('在此指定空白字元的數量，用以代表每個定位點 (tab) 的長度。')
 
     pref.find('select[id="editor.tabType"]').prev('label').children('.setting-title').html('定位 (tab) 模式')
     pref.find('select[id="editor.tabType"]').prev('label').children('.setting-description').html('當按下定位 (tab) 鍵時，插入的字元。有三種模式：「自動判斷 (auto)」、「軟定位點 (soft)」或 「硬定位點 (hard)」。「軟定位點」使用空白字元 (space)，「硬定位點」使用定位字元 (tab)。「自動判斷」模式將會使用該行行首的空白字元或定位字元。如果自動判斷失敗，將會直接採用<code>軟定位點</code>的設定。')

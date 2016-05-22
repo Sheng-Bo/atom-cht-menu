@@ -54,6 +54,7 @@ Context:
     "tabs:split-down": "向下分割窗格 ↓"
     "tabs:split-left": "向左分割窗格 ←"
     "tabs:split-right": "向右分割窗格 →"
+    "tabs:open-in-new-window": "在新視窗開啟"
   ".tab-bar":
     "pane:reopen-closed-item": "重新打開上一次關閉之頁籤"
   ".tree-view.full-menu":
