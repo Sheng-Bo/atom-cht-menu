@@ -16,16 +16,16 @@ Menu:
 				value: "重新打開上一次關閉的文件(&I)"
 			"Se&ttings":
 				value: "偏好設定(&T)..."
-			"Open Your Config":
-				value: "打開我的設定"
-			"Open Your Init Script":
-				value: "打開我的初始化指令檔"
-			"Open Your Keymap":
-				value: "打開我的快速鍵設定檔"
-			"Open Your Snippets":
-				value: "打開我的程式碼片段"
-			"Open Your Stylesheet":
-				value: "打開我的 Atom 樣式表"
+			"Config…":
+				value: "設定檔..."
+			"Init Script…":
+				value: "初始化指令檔..."
+			"Keymap…":
+				value: "快速鍵設定檔..."
+			"Snippets…":
+				value: "程式碼片段檔..."
+			"Stylesheet…":
+				value: "Atom 樣式表..."
 			"&Save":
 				value: "儲存(&S)"
 			"Save &As…":
@@ -258,6 +258,8 @@ Menu:
 				value: "取代下一個項目"
 			"Replace All":
 				value: "全部取代"
+			"Clear History":
+				value: "清除歷史記錄"
 			"Find Buffer":
 				value: "尋找編輯中文件"
 			"Find File":
