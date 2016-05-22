@@ -12,8 +12,13 @@ Menu:
 				value: "打開資料夾..."
 			"Add Project Folder…":
 				value: "新增專案資料夾..."
-			"Reopen Last &Item":
-				value: "重新打開上一次關閉的文件(&I)"
+			"Open Recent":
+				value: "開啟最近的..."
+				submenu:
+					"Reopen Closed File":
+						value: "重新開啟上次關閉的文件"
+					"Clear List":
+						value: "清除列表"
 			"&Save":
 				value: "存檔(&S)"
 			"Save &As…":
@@ -202,6 +207,8 @@ Menu:
 				value: "指令面板"
 			"Toggle Tree View":
 				value: "檔案清單面板"
+			"Toggle Symbols-Tree-View":
+				value: "定義清單面板"
 	"&Selection":
 		value: "選取區域(&S)"
 		submenu:

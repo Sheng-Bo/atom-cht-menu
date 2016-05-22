@@ -284,6 +284,8 @@ Menu:
 				value: "指令面板"
 			"Toggle Tree View":
 				value: "檔案清單面板"
+			"Toggle Symbols-Tree-View":
+				value: "定義清單面板"
 	Packages:
 		value: "擴充套件"
 	Window:
