@@ -110,7 +110,7 @@ Context:
     "tree-view:copy": "複製"
     "tree-view:cut": "剪下"
     "tree-view:paste": "貼上"
-	".tree-view .file > .name":
+  ".tree-view .file > .name":
     "atom-beautify:beautify-file": "美化程式碼"
-	".tree-view":
+  ".tree-view":
     "html-include-resource:include": "引用此資源"
