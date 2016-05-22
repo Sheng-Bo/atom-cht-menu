@@ -67,6 +67,12 @@ localizeSettings = () ->
 
     pref.find('label[for="core.audioBeep"]').children('.setting-title').html('嗶嗶聲')
     pref.find('label[for="core.audioBeep"]').next('.setting-description').html('當操作無效或無結果可顯示時，以系統嗶嗶聲警告。')
+
+		pref.find('label[for="core.automaticallyUpdate"]').children('.setting-title').html('自動更新')
+		pref.find('label[for="core.automaticallyUpdate"]').next('.setting-description').html('當有新版本的時候，自動更新 Atom。')
+		pref.find('label[for="core.automaticallyUpdate"]').children('.setting-title').html('自動更新')
+		pref.find('label[for="core.automaticallyUpdate"]').next('.setting-description').html('當有新版本的時候，自動更新 Atom。')
+
     pref.find('label[for="core.autoHideMenuBar"]').children('.setting-title').html('自動隱藏主選單')
     pref.find('label[for="core.autoHideMenuBar"]').next('.setting-description').html('自動隱藏主選單後，可以按下 Alt 鍵使其再次浮現。這項設定只有 Windows 和 Linux 作業系統支援。')
     pref.find('label[for="core.destroyEmptyPanes"]').children('.setting-title').html('自動關閉空窗格')
