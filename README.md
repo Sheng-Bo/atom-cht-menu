@@ -1,10 +1,9 @@
 # Atom 編輯器繁體中文化：主功能選單、右鍵選單以及大部分的偏好設定。
 作者：陳聖博
 
-<img src="https://raw.githubusercontent.com/Sheng-Bo/atom-cht-menu/master/screenshot/03.jpg" width="70%">
+<img src="https://raw.githubusercontent.com/Sheng-Bo/atom-cht-menu/master/screenshot/03.png" width="70%">
 
-
-## 0.2.1 (12-23-2016)
+## 0.2.2 (12-23-2016)
 默默的這個專案也執行了一年半了，Atom 功能也越來越成熟完善了。一樣是寒假才有空把過去半年 Atom 新增的功能進行翻譯。
 
 * 對應 Atom 1.12.7 版。
