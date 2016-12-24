@@ -87,6 +87,13 @@ Menu:
 						value: "刪除(&E)"
 					"&Join Lines":
 						value: "合併(&J)"
+			Columns:
+				value: "欄"
+				submenu:
+					"Move Selection &Left":
+						value: "將選取字元左移(&L)"
+					"Move Selection &Right":
+						value: "將選取字元右移(&R)"
 			Text:
 				value: "文字"
 				submenu:
@@ -191,6 +198,8 @@ Menu:
 				submenu:
 					"Open In &Dev Mode…":
 						value: "在開發人員模式中開啟(&D)"
+					"&Reload Window":
+						value: "重新載入視窗(&R)"
 					"Run &Atom Specs":
 						value: "執行 Atom 規格測試(&A)"
 					"Run Package &Specs":
@@ -281,9 +290,9 @@ Menu:
 		value: "說明(&H)"
 		submenu:
 			"View &Terms of Use":
-			  value: "檢視使用條款"
+				value: "檢視使用條款"
 			"View &License":
-			  value: "檢視授權"
+				value: "檢視授權"
 			"&Documentation":
 				value: "說明文件(&D)"
 			Roadmap:

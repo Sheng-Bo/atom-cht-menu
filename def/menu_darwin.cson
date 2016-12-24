@@ -98,6 +98,13 @@ Menu:
 						value: "刪除"
 					"Join Lines":
 						value: "合併"
+			Columns:
+				value: "欄"
+				submenu:
+					"Move Selection Left":
+						value: "將選取字元左移"
+					"Move Selection Right":
+						value: "將選取字元右移"
 			Text:
 				value: "文字"
 				submenu:

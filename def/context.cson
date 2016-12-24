@@ -1,116 +1,132 @@
 Context:
-  "atom-workspace":
-    "application:inspect": "檢查元素"
-  "atom-workspace atom-text-editor:not(.mini)":
-    "atom-beautify:beautify-editor": "美化程式碼"
-    "atom-beautify:help-debug-editor": "複製 Atom Beautify 除錯訊息"
-  "atom-text-editor":
-    "activate-power-mode:toggle": "activate-power-mode"
-    "color-picker:open": "色彩選取工具"
-    "minimap:toggle": "Minimap"
-    "atom-html-preview:toggle": "HTML 預覽畫面"
-    "git-control:toggle": "git-control 面板"
-    "php-cs-fixer:fix": "執行 php-cs-fixer"
-    "symbols-tree-view:toggle": "宣告清單面板"
-  "atom-text-editor, .overlayer":
-    "core:undo": "復原"
-    "core:redo": "重做"
-    "core:cut": "剪下"
-    "core:copy": "複製"
-    "core:paste": "貼上"
-    "core:delete": "刪除"
-    "core:select-all": "全選"
-    "pane:split-up-and-copy-active-item": "向上分割窗格 ↑"
-    "pane:split-down-and-copy-active-item": "向下分割窗格 ↓"
-    "pane:split-left-and-copy-active-item": "向左分割窗格 ←"
-    "pane:split-right-and-copy-active-item": "向右分割窗格 →"
-    "pane:close": "關閉窗格"
-  "atom-pane":
-    "pane:split-up": "向上分割窗格 ↑"
-    "pane:split-down": "向下分割窗格 ↓"
-    "pane:split-left": "向左分割窗格 ←"
-    "pane:split-right": "向右分割窗格 →"
-    "pane:close": "關閉窗格"
-  "atom-text-editor:not([mini])":
-    "encoding-selector:show": "切換編碼"
-    "spell-check:correct-misspelling": "拼字檢查"
-    "symbols-view:go-to-declaration": "移動至宣告"
-  "atom-pane[data-active-item-path] .item-views":
-    "tree-view:reveal-active-file": "顯示於檔案清單面板"
-  "atom-pane[data-active-item-path] .tab.active":
-    "tree-view:reveal-active-file": "顯示於檔案清單面板"
-  ".overlayer":
-    "autocomplete:toggle": "オートコンプリート"
-    "grammar-selector:show": "文法を選択"
-  ".image-view":
-    "image-view:reload": "画像をリロード"
-  ".tab":
-    "tabs:close-tab": "關閉頁籤"
-    "tabs:close-other-tabs": "關閉其他頁籤"
-    "tabs:close-tabs-to-right": "關閉右側頁籤"
-    "tabs:close-saved-tabs": "關閉已存擋之頁籤"
-    "tabs:close-all-tabs": "關閉全部頁籤"
-    "tabs:split-up": "向上分割窗格 ↑"
-    "tabs:split-down": "向下分割窗格 ↓"
-    "tabs:split-left": "向左分割窗格 ←"
-    "tabs:split-right": "向右分割窗格 →"
-    "tabs:open-in-new-window": "在新視窗開啟"
-  ".tab-bar":
-    "pane:reopen-closed-item": "重新打開上一次關閉之頁籤"
-  ".tree-view.full-menu":
-    "tree-view:add-file": "新增文件"
-    "tree-view:add-folder": "新增資料夾"
-    "tree-view:move": "移動・重新命名..."
-    "tree-view:duplicate": "製作副本"
-    "tree-view:remove": "刪除"
-    "tree-view:copy": "複製"
-    "tree-view:cut": "剪下"
-    "tree-view:paste": "貼上"
-    "tree-view:open-selected-entry-up": "向上分割窗格 ↑"
-    "tree-view:open-selected-entry-down": "向下分割窗格 ↓"
-    "tree-view:open-selected-entry-left": "向左分割窗格 ←"
-    "tree-view:open-selected-entry-right": "向右分割窗格 →"
-    "application:add-project-folder": "新增專案資料夾..."
-    "tree-view:copy-full-path": "複製完整路徑"
-    "tree-view:copy-project-path": "複製專案路徑"
-    "tree-view:open-in-new-window": "於新視窗中開啟"
-  '.tree-view.full-menu [is="tree-view-file"]':
-    "tree-view:open-selected-entry-up": "向上分割窗格 ↑"
-    "tree-view:open-selected-entry-down": "向下分割窗格 ↓"
-    "tree-view:open-selected-entry-left": "向左分割窗格 ←"
-    "tree-view:open-selected-entry-right": "向右分割窗格 →"
-  ".tree-view.full-menu .project-root > .header":
-    "tree-view:add-file": "新增文件"
-    "tree-view:add-folder": "新增資料夾"
-    "tree-view:move": "移動・重新命名..."
-    "tree-view:duplicate": "製作副本"
-    "tree-view:remove": "刪除"
-    "tree-view:copy": "複製"
-    "tree-view:cut": "剪下"
-    "tree-view:paste": "貼上"
-    "tree-view:open-selected-entry-up": "向上分割窗格 ↑"
-    "tree-view:open-selected-entry-down": "向下分割窗格 ↓"
-    "tree-view:open-selected-entry-left": "向左分割窗格 ←"
-    "tree-view:open-selected-entry-right": "向右分割窗格 →"
-    "application:add-project-folder": "新增專案資料夾..."
-    "tree-view:remove-project-folder": "移除專案資料夾"
-    "tree-view:copy-full-path": "複製完整路徑"
-    "tree-view:copy-project-path": "複製專案路徑"
-    "tree-view:open-in-new-window": "於新視窗中開啟"
-  ".platform-darwin .tree-view.full-menu":
-    "tree-view:show-in-file-manager": "顯示於 Finder"
-  ".platform-win32 .tree-view.full-menu":
-    "tree-view:show-in-file-manager": "顯示於檔案總管"
-  ".platform-linux .tree-view.full-menu":
-    "tree-view:show-in-file-manager": "顯示於檔案總管"
-  ".tree-view > li.directory":
-    "project-find:show-in-current-directory": "在資料夾中尋找"
-  ".tree-view.multi-select":
-    "tree-view:remove": "刪除"
-    "tree-view:copy": "複製"
-    "tree-view:cut": "剪下"
-    "tree-view:paste": "貼上"
-  ".tree-view .file > .name":
-    "atom-beautify:beautify-file": "美化程式碼"
-  ".tree-view":
-    "html-include-resource:include": "引用此資源"
+	"atom-workspace":
+		"application:inspect": "檢查元素"
+	"atom-workspace atom-text-editor:not(.mini)":
+		"atom-beautify:beautify-editor": "美化程式碼"
+		"atom-beautify:help-debug-editor": "複製 Atom Beautify 除錯訊息"
+	"atom-text-editor":
+		"activate-power-mode:toggle": "activate-power-mode"
+		"color-picker:open": "色彩選取工具"
+		"minimap:toggle": "Minimap"
+		"atom-html-preview:toggle": "HTML 預覽畫面"
+		"git-control:toggle": "git-control 面板"
+		"php-cs-fixer:fix": "執行 php-cs-fixer"
+		"symbols-tree-view:toggle": "宣告清單面板"
+	"atom-text-editor, .overlayer":
+		"core:undo": "復原"
+		"core:redo": "重做"
+		"core:cut": "剪下"
+		"core:copy": "複製"
+		"core:paste": "貼上"
+		"core:delete": "刪除"
+		"core:select-all": "全選"
+		"pane:split-up-and-copy-active-item": "向上分割窗格 ↑"
+		"pane:split-down-and-copy-active-item": "向下分割窗格 ↓"
+		"pane:split-left-and-copy-active-item": "向左分割窗格 ←"
+		"pane:split-right-and-copy-active-item": "向右分割窗格 →"
+		"pane:close": "關閉窗格"
+	"atom-pane":
+		"pane:split-up-and-copy-active-item": "向上分割窗格 ↑"
+		"pane:split-down-and-copy-active-item": "向下分割窗格 ↓"
+		"pane:split-left-and-copy-active-item": "向左分割窗格 ←"
+		"pane:split-right-and-copy-active-item": "向右分割窗格 →"
+		"pane:close": "關閉窗格"
+	"atom-text-editor:not([mini])":
+		"encoding-selector:show": "切換編碼"
+		"spell-check:correct-misspelling": "拼字檢查"
+		"symbols-view:go-to-declaration": "移動至宣告"
+	"atom-pane[data-active-item-path] .item-views":
+		"tree-view:reveal-active-file": "顯示於檔案清單面板"
+	"atom-pane[data-active-item-path] .tab.active":
+		"tree-view:rename": "重新命名"
+		"tree-view:reveal-active-file": "顯示於檔案清單面板"
+	".platform-darwin atom-pane[data-active-item-path] .tab.active":
+		"tree-view:show-current-file-in-file-manager": "顯示於 Finder"
+	".platform-win32 atom-pane[data-active-item-path] .tab.active":
+		"tree-view:show-current-file-in-file-manager": "顯示於 Windows 檔案總管"
+	".platform-linux atom-pane[data-active-item-path] .tab.active":
+		"tree-view:show-current-file-in-file-manager": "顯示於 Linux 檔案管理員"
+	".platform-darwin atom-text-editor:not([mini])":
+		"tree-view:show-current-file-in-file-manager": "顯示於 Finder"
+	".platform-win32 atom-text-editor:not([mini])":
+		"tree-view:show-current-file-in-file-manager": "顯示於 Windows 檔案總管"
+	".platform-linux atom-text-editor:not([mini])":
+		"tree-view:show-current-file-in-file-manager": "顯示於 Linux 檔案管理員"
+	".overlayer":
+		"autocomplete:toggle": "オートコンプリート"
+		"grammar-selector:show": "文法を選択"
+	".image-view":
+		"image-view:reload": "画像をリロード"
+	".tab":
+		"tabs:close-tab": "關閉頁籤"
+		"tabs:close-other-tabs": "關閉其他頁籤"
+		"tabs:close-tabs-to-right": "關閉右側頁籤"
+		"tabs:close-tabs-to-left": "關閉左側頁籤"
+		"tabs:close-saved-tabs": "關閉已存擋之頁籤"
+		"tabs:close-all-tabs": "關閉全部頁籤"
+		"tabs:split-up": "向上分割窗格 ↑"
+		"tabs:split-down": "向下分割窗格 ↓"
+		"tabs:split-left": "向左分割窗格 ←"
+		"tabs:split-right": "向右分割窗格 →"
+		"tabs:open-in-new-window": "在新視窗開啟"
+	".tab-bar":
+		"pane:reopen-closed-item": "重新打開上一次關閉之頁籤"
+	".tree-view.full-menu":
+		"tree-view:add-file": "新增文件"
+		"tree-view:add-folder": "新增資料夾"
+		"tree-view:move": "移動・重新命名..."
+		"tree-view:duplicate": "製作副本"
+		"tree-view:remove": "刪除"
+		"tree-view:copy": "複製"
+		"tree-view:cut": "剪下"
+		"tree-view:paste": "貼上"
+		"tree-view:open-selected-entry-up": "向上分割窗格 ↑"
+		"tree-view:open-selected-entry-down": "向下分割窗格 ↓"
+		"tree-view:open-selected-entry-left": "向左分割窗格 ←"
+		"tree-view:open-selected-entry-right": "向右分割窗格 →"
+		"application:add-project-folder": "新增專案資料夾..."
+		"tree-view:copy-full-path": "複製完整路徑"
+		"tree-view:copy-project-path": "複製專案路徑"
+		"tree-view:open-in-new-window": "於新視窗中開啟"
+	'.tree-view.full-menu [is="tree-view-file"]':
+		"tree-view:open-selected-entry-up": "向上分割窗格 ↑"
+		"tree-view:open-selected-entry-down": "向下分割窗格 ↓"
+		"tree-view:open-selected-entry-left": "向左分割窗格 ←"
+		"tree-view:open-selected-entry-right": "向右分割窗格 →"
+	".tree-view.full-menu .project-root > .header":
+		"tree-view:add-file": "新增文件"
+		"tree-view:add-folder": "新增資料夾"
+		"tree-view:move": "移動・重新命名..."
+		"tree-view:duplicate": "製作副本"
+		"tree-view:remove": "刪除"
+		"tree-view:copy": "複製"
+		"tree-view:cut": "剪下"
+		"tree-view:paste": "貼上"
+		"tree-view:open-selected-entry-up": "向上分割窗格 ↑"
+		"tree-view:open-selected-entry-down": "向下分割窗格 ↓"
+		"tree-view:open-selected-entry-left": "向左分割窗格 ←"
+		"tree-view:open-selected-entry-right": "向右分割窗格 →"
+		"application:add-project-folder": "新增專案資料夾..."
+		"tree-view:remove-project-folder": "移除專案資料夾"
+		"tree-view:copy-full-path": "複製完整路徑"
+		"tree-view:copy-project-path": "複製專案路徑"
+		"tree-view:open-in-new-window": "於新視窗中開啟"
+	".platform-darwin .tree-view.full-menu":
+		"tree-view:show-in-file-manager": "顯示於 Finder"
+	".platform-win32 .tree-view.full-menu":
+		"tree-view:show-in-file-manager": "顯示於檔案總管"
+	".platform-linux .tree-view.full-menu":
+		"tree-view:show-in-file-manager": "顯示於檔案總管"
+	".tree-view > li.directory":
+		"project-find:show-in-current-directory": "在資料夾中尋找"
+	".tree-view.multi-select":
+		"tree-view:remove": "刪除"
+		"tree-view:copy": "複製"
+		"tree-view:cut": "剪下"
+		"tree-view:paste": "貼上"
+	".tree-view .file > .name":
+		"atom-beautify:beautify-file": "美化程式碼"
+	".tree-view":
+		"html-include-resource:include": "引用此資源"
+	".tab.texteditor":
+		"tabs:open-in-new-window": "在新視窗開啟"

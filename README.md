@@ -1,7 +1,18 @@
 # Atom 編輯器繁體中文化：主功能選單、右鍵選單以及大部分的偏好設定。
 作者：陳聖博
 
-<img src="https://raw.githubusercontent.com/Sheng-Bo/atom-cht-menu/master/screenshot/02.jpg" width="70%">
+<img src="https://raw.githubusercontent.com/Sheng-Bo/atom-cht-menu/master/screenshot/03.jpg" width="70%">
+
+
+## 0.1.24 (12-23-2016)
+默默的這個專案也執行了一年半了，Atom 功能也越來越成熟完善了。一樣是寒假才有空把過去半年 Atom 新增的功能進行翻譯。
+
+* 對應 Atom 1.12.7 版。
+* 頁籤的 Settings 改顯示為「偏好設定」
+* 偏好設定面板中的  Core (設定) 被拆開成 Core (軟體核心設定) 和 Editor (文字編輯區域設定)，並另追加了 System (作業系統整合設定) 的翻譯。
+* Context menu 翻譯成內容選單(右鍵選單)。考慮到尊重習慣用左手的朋友，呼叫內容選單不一定是用滑鼠右鍵，所以同時包含了正式和俗用的譯法。
+* Editor (文字編輯區域設定) 下新增的 Atomic Soft Tabs (將行前空白群組為軟定位點) 項目，是為了方便喜歡用空白而不喜歡用定位縮排程式碼的使用者。這項用一個比較淺顯卻符合原文、原意的方式翻譯。
+* 些許的效能提升與除蟲。
 
 
 ## 0.1.23 (05-22-2016)

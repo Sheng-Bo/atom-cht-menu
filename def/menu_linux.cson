@@ -12,6 +12,8 @@ Menu:
 				value: "打開資料夾..."
 			"Add Project Folder…":
 				value: "新增專案資料夾..."
+			"Reopen Last &Item":
+				value: "重新開啟剛關閉的頁籤"
 			"Open Recent":
 				value: "開啟最近的..."
 				submenu:
@@ -73,6 +75,13 @@ Menu:
 						value: "刪除(&E)"
 					"&Join Lines":
 						value: "合併(&J)"
+			Columns:
+				value: "欄"
+				submenu:
+					"Move Selection &Left":
+						value: "將選取字元左移(&L)"
+					"Move Selection &Right":
+						value: "將選取字元右移(&R)"
 			Text:
 				value: "文字"
 				submenu:
@@ -189,6 +198,8 @@ Menu:
 				submenu:
 					"Open In &Dev Mode…":
 						value: "在開發人員模式中開啟(&D)..."
+					"&Reload Window":
+						value: "重新載入視窗(&R)"
 					"Run &Atom Specs":
 						value: "執行 Atom 規格測試(&A)"
 					"Run Package &Specs":
@@ -279,9 +290,9 @@ Menu:
 		value: "說明(&H)"
 		submenu:
 			"View &Terms of Use":
-			  value: "檢視使用條款(&T)"
+				value: "檢視使用條款(&T)"
 			"View &License":
-			  value: "檢視授權(&L)"
+				value: "檢視授權(&L)"
 			"&Documentation":
 				value: "說明文件(&D)"
 			Roadmap:
