@@ -209,7 +209,7 @@ Menu:
 						value: "執行 Atom 規格測試(&A)"
 					"Run Package &Specs":
 						value: "執行擴充套件規格測試(&S)"
-					"Run Benchmarks":
+					"Run &Benchmarks":
 						value: "執行基準測試"
 					"Toggle Developer &Tools":
 						value: "開發人員工具(&T)"
