@@ -12,6 +12,11 @@ Menu:
 				value: "打開資料夾..."
 			"Add Project Folder…":
 				value: "新增專案資料夾..."
+			"Reopen Project":
+				value: "重新打開專案"
+				submenu:
+					"Clear Project History":
+						value: "清除專案歷史"
 			"Reopen Last &Item":
 				value: "重新打開上一次關閉的文件(&I)"
 			"Open Recent":
@@ -204,6 +209,8 @@ Menu:
 						value: "執行 Atom 規格測試(&A)"
 					"Run Package &Specs":
 						value: "執行擴充套件規格測試(&S)"
+					"Run Benchmarks":
+						value: "執行基準測試"
 					"Toggle Developer &Tools":
 						value: "開發人員工具(&T)"
 			"&Increase Font Size":
@@ -268,6 +275,8 @@ Menu:
 				value: "在專案資料夾中尋找..."
 			"Toggle Find in Project":
 				value: "打開/關閉在專案資料夾尋找面板"
+			"Find All":
+				value: "尋找全部"
 			"Find Next":
 				value: "尋找下一個項目"
 			"Find Previous":

@@ -2,7 +2,7 @@ module.exports =
 
 	activate: (state) ->
 		# console.log atom
-		setTimeout(@delay, 0, this)
+		setTimeout(@delay, 5000, this)
 
 
 	delay: (that) ->
@@ -204,6 +204,28 @@ module.exports =
 			temp = pref.find('.icon.icon-dashboard:contains("This package added ")')
 			if temp.length != 0
 				temp.html temp.html().replace('This package added ', '這個套件增加了 ').replace(' to startup time.', ' 的啟動時間。')
+
+			temp = pref.find('atom-text-editor').find('.placeholder-text:contains("Default:")')
+			$(temp).each (i, d) ->
+				dflt = $(d).text()
+				$(d).text dflt.replace('Default', '預設值')
+				return
+
+			temp = pref.find('atom-text-editor').find('.placeholder-text:contains("Search keybindings")')
+			if temp.length != 0
+				temp.html '尋找快速鍵'
+
+			temp = pref.find('atom-text-editor').find('.placeholder-text:contains("Filter packages by name")')
+			if temp.length != 0
+				temp.html '尋找擴充套件名稱'
+
+			temp = pref.find('atom-text-editor').find('.placeholder-text:contains("Filter themes by name")')
+			if temp.length != 0
+				temp.html '尋找佈景主題名稱'
+
+			temp = pref.find('atom-text-editor').find('.placeholder-text:contains("Search packages")')
+			if temp.length != 0
+				temp.html '尋找擴充套件'
 
 			return
 		), 0)

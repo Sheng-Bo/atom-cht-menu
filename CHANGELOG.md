@@ -1,3 +1,16 @@
+
+## 0.3.1 (06-05-2017)
+由於5月5日通過 OSU 博士候選人資格考試，之前忙到脫掉十層皮。過去一個月將協助中的幾個重要的研究計畫的前置作業完成，方有時間修正過去半年 Atom 各項重大改動的翻譯。
+* 對應 Atom 1.17.2 版。
+* 對應偏好設定和內容選單 (右鍵選單)的 CSS 和 HTML 改動。
+* 翻譯新版本追加的功能選單。
+  * File > Reopen Project
+  * View > Developer > Run Benchmarks
+  * Find > Find All
+* 由於 Atom 捨棄了 Web Component 寫法，也不需要透過 Shadow DOM 存取 placeholder text，所以下拉選單和文字欄位已翻譯。
+* 延遲五秒才會套用中文化，因為需要讓 Reopen Project 計算專案清單數量。
+
+
 ## 0.2.2 (12-23-2016)
 默默的這個專案也執行了一年半了，Atom 功能也越來越成熟完善了。一樣是寒假才有空把過去半年 Atom 新增的功能進行翻譯。
 
