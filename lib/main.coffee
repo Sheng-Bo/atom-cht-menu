@@ -228,4 +228,4 @@ module.exports =
 				temp.html '尋找擴充套件'
 
 			return
-		), 0)
+		), 1000)
